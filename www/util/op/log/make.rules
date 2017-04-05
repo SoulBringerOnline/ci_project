@@ -1,0 +1,58 @@
+#-------------------------------------------------------------------------------a
+# SERVER @ WB 
+# 2011-05-10
+# lavenzhao@tencent.com
+#-------------------------------------------------------------------------------a
+#export LC_ALL	= zh_CN.GB2312
+#export LANG		= zh_CN.GB2312
+
+#-------------------------------------------------------------------------------
+
+VERSION_MAJOR  := 1
+VERSION_MINOR  := 0
+VERSION_PATCH  := 0
+VERSION    := $(VERSION_MAJOR).$(VERSION_MINOR).$(VERSION_PATCH)
+
+#-------------------------------------------------------------------------------
+CCCOLOR="\033[34m"
+LINKCOLOR="\033[34;1m"
+SRCCOLOR="\033[33m"
+BINCOLOR="\033[37;1m"
+MAKECOLOR="\033[32;1m"
+ENDCOLOR="\033[0m"
+
+QUIET =  @printf '    %b %b\n' $(CCCOLOR)CC$(ENDCOLOR) $(SRCCOLOR)$@$(ENDCOLOR) 1>&2;
+CC          =  gcc
+CXX         =  g++
+CFLAGS      += -g -Wall -Wno-write-strings -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -std=c++11
+
+#-------------------------------------------------------------------------------
+
+LOCAL_SRC   += $(sort $(wildcard *.cpp *.c *.pb.cc))
+LOCAL_OBJ   += $(patsubst %.pb.cc,%.pb.o, $(patsubst %.cpp,%.o, $(patsubst %.c,%.o, $(LOCAL_SRC))))
+DEP_FILE    := $(foreach obj, $(LOCAL_OBJ), $(dir $(obj)).$(basename $(notdir $(obj))).d)
+
+#-------------------------------------------------------------------------------
+
+LIB_ROOT   =  /usr/local/commlib
+
+INC_BASE   = -I$(LIB_ROOT)/libbase
+LIB_BASE   = $(LIB_ROOT)/libbase/libbase.a
+
+INC_REDIS = -I/usr/local/include/hiredis
+LIB_REDIS = /usr/local/lib/libhiredis.a
+
+INC_YS   = -I$(LIB_ROOT)/libys
+LIB_YS   = $(LIB_ROOT)/libys/libys.a
+
+INC_SRV   = -I$(LIB_ROOT)/libsrv
+LIB_SRV   = $(LIB_ROOT)/libsrv/libsrv.a
+#-------------------------------------------------------------------------------
+
+WORK_PATH = /mnt/hgfs/git/gsk/op/log/src
+BIN_PATH = /mnt/hgfs/git/gsk/op/log/bin
+
+INC := -I. $(INC_BASE) $(INC_REDIS) $(INC_YS) $(INC_SRV)
+LIB := -L. $(LIB_BASE) $(LIB_REDIS) $(LIB_YS) $(LIB_SRV)
+
+#-------------------------------------------------------------------------------

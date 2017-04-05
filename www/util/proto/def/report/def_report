@@ -1,0 +1,63 @@
+#__MESSAGE_BEGIN__ t_base_info
+#__MESSAGE_FILED__ uint f_uin                                            --用户ID
+#__MESSAGE_FILED__ int f_clt                                             --客户端id(ios/android/pc/mac)
+#__MESSAGE_FILED__ string f_phone                                        --手机号
+#__MESSAGE_FILED__ int f_dye                                             --染色ID
+#__MESSAGE_FILED__ string f_ip                                           --ip
+#__MESSAGE_FILED__ string f_name                                         --用户昵称
+#__MESSAGE_FILED__ string f_province                                     --省
+#__MESSAGE_FILED__ string f_city                                         --市
+#__MESSAGE_FILED__ string f_company_type                                 --公司类型
+#__MESSAGE_FILED__ string f_years_of_working                             --工作年限
+#__MESSAGE_FILED__ string f_job_type                                     --工作类型
+#__MESSAGE_FILED__ string f_job_title                                    --职称
+#__MESSAGE_FILED__ int f_inviter_uid                                     --邀请者id
+#__MESSAGE_FILED__ int f_friend_num                                      --好友数量
+#__MESSAGE_FILED__ int f_continuity_day_num                              --连续登陆天数
+#__MESSAGE_FILED__ int f_project_members_num                             --项目添加成员数量
+#__MESSAGE_FILED__ string f_company                                      --公司名称
+#__MESSAGE_END__  t_base_info
+
+//-----------------------------单条聊天信息
+#__MESSAGE_BEGIN__ t_msg_item
+#__MESSAGE_FILED__ string f_msg_id                                       --消息id
+#__MESSAGE_FILED__ uint f_msg_type                                       --消息类型/文本、语音...
+#__MESSAGE_FILED__ string f_msg_body                                     --消息内容
+#__MESSAGE_FILED__ int f_sender_id                                       --消息发送者id
+#__MESSAGE_FILED__ string f_sender_name                                  --消息发送者name
+#__MESSAGE_FILED__ string f_sender_remark                                --消息发送者在该群中的昵称
+#__MESSAGE_FILED__ string f_sender_avatar                                --消息发送者头像
+#__MESSAGE_FILED__ string f_group_id                                     --群组id
+#__MESSAGE_FILED__ uint f_group_type                                     --群组类型
+#__MESSAGE_FILED__ string f_group_name                                   --群组name
+#__MESSAGE_FILED__ string f_group_desc                                   --群组描述
+#__MESSAGE_FILED__ int f_send_time                                       --发送时间
+#__MESSAGE_FILED__ int f_msg_seq_id                                      --消息seq
+#__MESSAGE_END__ t_msg_item
+
+
+
+
+//-----------------------------上报
+#__MESSAGE_BEGIN__ t_client
+#__MESSAGE_FILED__ string f_phone_info                                   --手机信息
+#__MESSAGE_FILED__ string f_os                                           --手机操作系统
+#__MESSAGE_FILED__ string f_sp                                           --手机运营商
+#__MESSAGE_FILED__ string f_network                                      --手机网络
+#__MESSAGE_FILED__ int f_version                                         --客户端版本
+#__MESSAGE_FILED__ int f_client_id                                       --客户端ID
+#__MESSAGE_FILED__ int f_channel_id                                      --客户端Channel
+#__MESSAGE_END__ t_client
+
+
+#---------------------------上报---------------------------
+#__MESSAGE_BEGIN__  t_report
+#__MESSAGE_FILED__ int f_msg_type                                        --1、请求
+#__MESSAGE_FILED__ int f_i_cmd                                           --命令字
+#__MESSAGE_FILED__ string f_s_cmd                                        --命令字描述
+#__MESSAGE_FILED__ int f_time                                            
+#__MESSAGE_FILED__ string f_log                                          
+#__MESSAGE_FILED__ pb_report_t_base_info f_info                          --用户信息
+#__MESSAGE_FILED__ pb_report_t_client f_client                           --客户端上报信息
+#__MESSAGE_FILED__ pb_report_t_msg_item f_msg_item                       --群消息信息
+#__MESSAGE_END__    t_report

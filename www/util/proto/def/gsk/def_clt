@@ -1,0 +1,109 @@
+//-----------------------------好友列表
+#__MESSAGE_BEGIN__ t_friend
+#__MESSAGE_FILED__ int f_update_type                                     --1:全量覆盖2:追加
+#__MESSAGE_FILED__ array pb_user_t_friend f_friends                       --好友列表
+#__MESSAGE_FILED__ int f_friend_cnt                                      --好友列表个数
+#__MESSAGE_END__ t_friend
+
+//-----------------------------好友推荐列表
+#__MESSAGE_BEGIN__ t_recommend_friend
+#__MESSAGE_FILED__ int f_update_type                                     --1:全量覆盖2:追加
+#__MESSAGE_FILED__ array pb_user_t_recommend_friend f_recommend_friends   --推荐列表
+#__MESSAGE_FILED__ int f_recommend_friend_cnt                            --推荐列表个数
+#__MESSAGE_END__ t_recommend_friend
+
+
+//-----------------------------群组中的成员
+#__MESSAGE_BEGIN__ t_group_user
+#__MESSAGE_FILED__ uint f_uin                                            --用户id
+#__MESSAGE_FILED__ string f_name                                         --用户名称
+#__MESSAGE_FILED__ string f_remark                                       --用户在群组中的群昵称
+#__MESSAGE_FILED__ int f_title                                           --用户在群组中身份
+#__MESSAGE_FILED__ string f_initial                                      --首字母
+#__MESSAGE_FILED__ int f_weight                                          --权重
+#__MESSAGE_FILED__ string f_name_pinyin                                  --名称全拼
+#__MESSAGE_FILED__ string f_name_pinyin_j                                --名称简拼
+#__MESSAGE_END__ t_group_user
+
+//----------------------------群组人员基本信息
+#__MESSAGE_BEGIN__ t_group_base_user
+#__MESSAGE_FILED__ uint f_uin                                            --用户id
+#__MESSAGE_FILED__ string f_name                                         --用户名称
+#__MESSAGE_END__ t_group_base_user
+
+
+//-----------------------------单个聊天群组
+#__MESSAGE_BEGIN__ t_group_item
+#__MESSAGE_FILED__ string f_group_id                                     --群组id
+#__MESSAGE_FILED__ string f_group_name                                   --群组name
+#__MESSAGE_FILED__ string f_group_desc                                   --群组描述
+#__MESSAGE_FILED__ int f_group_type                                      --群组类型
+#__MESSAGE_FILED__ int f_seq                                             --群组消息当前seq
+#__MESSAGE_FILED__ string f_last_msg                                     --最后一条消息
+#__MESSAGE_FILED__ int f_last_msg_time                                   --最后一条消息发送时间
+#__MESSAGE_FILED__ int f_last_msg_type                                   --最后一条消息发送类型
+#__MESSAGE_FILED__ int f_last_sender_id                                  --最后一条消息发送者id
+#__MESSAGE_FILED__ string f_last_sender_name                             --最后一条消息发送者name
+#__MESSAGE_FILED__ array string f_avatar                                  --群组头像列表
+#__MESSAGE_FILED__ int f_is_screen                                       --是否屏蔽群消息
+#__MESSAGE_FILED__ int f_is_remind                                       --是否提醒消息
+#__MESSAGE_FILED__ string f_remark                                       --我在该群中的备注
+#__MESSAGE_FILED__ string f_initial                                      --首字母
+#__MESSAGE_FILED__ int f_weight                                          --权重
+#__MESSAGE_FILED__ string f_name_pinyin                                  --群组名称全拼
+#__MESSAGE_FILED__ string f_name_pinyin_j                                --群组名称简拼
+#__MESSAGE_FILED__ int f_member_count                                    --群组成员数量
+#__MESSAGE_FILED__ int f_init_seqid                                      --加入群时，当前群seqid
+#__MESSAGE_FILED__ int f_read_seqid                                      --读取群最大seqid
+#__MESSAGE_FILED__ int f_creator_uid                                     --创建者uid
+#__MESSAGE_FILED__ array pb_clt_t_group_base_user f_base_users            --群组人员基本信息
+#__MESSAGE_END__ t_group_item
+
+#__MESSAGE_BEGIN__ t_group_details
+#__MESSAGE_FILED__ pb_clt_t_group_item f_group_info                      --群组基础信息
+#__MESSAGE_FILED__ array pb_clt_t_group_user f_members                    --群组成员
+#__MESSAGE_END__ t_group_details
+
+
+//-----------------------------聊天群组
+#__MESSAGE_BEGIN__ t_group
+#__MESSAGE_FILED__ int f_update_type                                     --1:全量覆盖2:追加
+#__MESSAGE_FILED__ string f_last_update_gid                              --最后变化的群组id
+#__MESSAGE_FILED__ array pb_clt_t_group_item f_im_group                   --群组列表
+#__MESSAGE_END__ t_group
+
+//-----------------------------版本更新
+#__MESSAGE_BEGIN__ t_version
+#__MESSAGE_FILED__ int f_version_id                                      --版本id
+#__MESSAGE_FILED__ string f_version_msg                                  --版本信息
+#__MESSAGE_FILED__ int f_chanel_id                                       --渠道id
+#__MESSAGE_FILED__ string f_down_url                                     --版本下载url
+#__MESSAGE_END__ t_version
+
+//-----------------------------返回给client的pb包
+#__MESSAGE_BEGIN__ t_user
+#__MESSAGE_FILED__ pb_user_t_info f_info                                 --用户profile
+#__MESSAGE_FILED__ pb_clt_t_friend f_friend_list                         --好友列表
+#__MESSAGE_FILED__ pb_clt_t_friend f_search_friend_list                  --搜索好友列表
+#__MESSAGE_FILED__ pb_clt_t_friend f_validation_friend_list              --验证好友列表
+#__MESSAGE_FILED__ pb_clt_t_group f_im_group                             --聊天群组
+#__MESSAGE_FILED__ pb_user_t_info f_friend_info                          --好友profile
+#__MESSAGE_FILED__ pb_im_t_msg f_im_msg                                  --im聊天消息列表
+#__MESSAGE_FILED__ pb_clt_t_group_details f_im_group_details             --聊天群组详情
+#__MESSAGE_FILED__ pb_prj_t_prj f_prj_list                               --项目列表
+#__MESSAGE_FILED__ pb_prj_t_details f_prj_details                        --项目详情
+#__MESSAGE_FILED__ pb_clt_t_recommend_friend f_n_recommend_friend_list   --推荐好友
+#__MESSAGE_FILED__ pb_prj_t_recommend_prj f_recommend_prj_list           --推荐项目列表
+#__MESSAGE_FILED__ array pb_prj_t_user f_prj_user                         --项目成员
+#__MESSAGE_FILED__ array pb_prj_t_user f_prj_join_user                    --申请加入项目成员
+#__MESSAGE_FILED__ pb_clt_t_version f_version                            --版本信息
+#__MESSAGE_FILED__ pb_prj_t_prj_weather f_prj_weather                    --项目天气
+#__MESSAGE_FILED__ pb_prj_t_task_details f_task_details                  --项目任务详情
+#__MESSAGE_FILED__ pb_prj_t_task_list f_task_list                        --任务列表
+#__MESSAGE_FILED__ pb_prj_t_file f_prj_files                             --项目文件列表
+#__MESSAGE_FILED__ int pb_clt_t_user_code                                --记录返回给客户端的状态值，以后可以包括任何业务
+#__MESSAGE_FILED__ pb_user_t_collection_list f_collection                --收藏列表
+#__MESSAGE_FILED__ int f_upstream_time                                   --处理时间
+#__MESSAGE_FILED__ pb_clt_t_group f_prj_record_group                     --项目记录群组
+#__MESSAGE_END__ t_user
+

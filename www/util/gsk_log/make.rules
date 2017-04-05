@@ -1,0 +1,63 @@
+#-------------------------------------------------------------------------------a
+# SERVER @ WB 
+# 2011-05-10
+# lavenzhao@tencent.com
+#-------------------------------------------------------------------------------a
+#export LC_ALL	= zh_CN.GB2312
+#export LANG		= zh_CN.GB2312
+
+#-------------------------------------------------------------------------------
+
+VERSION_MAJOR  := 1
+VERSION_MINOR  := 0
+VERSION_PATCH  := 0
+VERSION    := $(VERSION_MAJOR).$(VERSION_MINOR).$(VERSION_PATCH)
+
+#-------------------------------------------------------------------------------
+CCCOLOR="\033[34m"
+LINKCOLOR="\033[34;1m"
+SRCCOLOR="\033[33m"
+BINCOLOR="\033[37;1m"
+MAKECOLOR="\033[32;1m"
+ENDCOLOR="\033[0m"
+
+QUIET =  @printf '    %b %b\n' $(CCCOLOR)CC$(ENDCOLOR) $(SRCCOLOR)$@$(ENDCOLOR) 1>&2;
+CC          =  gcc
+CXX         =  g++ -std=c++0x
+CFLAGS      += -g -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wall  -Wno-unused-but-set-variable -Wno-write-strings -DDEBUG
+
+#-------------------------------------------------------------------------------
+
+LOCAL_SRC   += $(sort $(wildcard *.cpp *.c *.pb.cc))
+LOCAL_OBJ   += $(patsubst %.pb.cc,%.pb.o, $(patsubst %.cpp,%.o, $(patsubst %.c,%.o, $(LOCAL_SRC))))
+DEP_FILE    := $(foreach obj, $(LOCAL_OBJ), $(dir $(obj)).$(basename $(notdir $(obj))).d)
+
+#-------------------------------------------------------------------------------
+LIB_ROOT   =  /usr/local/commlib
+
+INC_BASE   = -I$(LIB_ROOT)/libbase
+LIB_BASE   = $(LIB_ROOT)/libbase/libbase.a
+
+INC_PB      =   -I/usr/local/include/
+LIB_PB      =   /usr/local/lib/libprotobuf.a
+
+#-------------------------------------------------------------------------------
+PRJ_PATH = /mnt/hgfs/git/gsk/log
+#-------------------------------------------------------------------------------
+
+WORK_PATH = $(PRJ_PATH)/src
+BIN_PATH = $(PRJ_PATH)/bin
+
+INC_MONGO = -I/usr/local/include/libmongoc-1.0
+LIB_MONGO = /usr/local/lib/libmongoc-1.0.a
+
+INC_ZMQ = 
+LIB_ZMQ =  /usr/local/lib/libzmq.a
+
+INC_BSON = -I/usr/local/include/libbson-1.0
+LIB_BSON = /usr/local/lib/libbson-1.0.a
+
+INC := -I. $(INC_BASE) $(INC_PB) $(INC_ZMQ) $(INC_MONGO) $(INC_BSON)
+LIB := -L. $(LIB_BASE) $(LIB_PB) $(LIB_ZMQ) $(LIB_MONGO) $(LIB_BSON)  -lrt -lpthread -lssl -lcrypto
+
+#-------------------------------------------------------------------------------

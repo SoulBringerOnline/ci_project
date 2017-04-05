@@ -1,0 +1,92 @@
+#-------------------------------------------------------------------------------a
+# SERVER @ WB 
+# 2011-05-10
+# lavenzhao@tencent.com
+#-------------------------------------------------------------------------------a
+#export LC_ALL	= zh_CN.GB2312
+#export LANG		= zh_CN.GB2312
+
+#-------------------------------------------------------------------------------
+
+VERSION_MAJOR  := 1
+VERSION_MINOR  := 0
+VERSION_PATCH  := 0
+VERSION    := $(VERSION_MAJOR).$(VERSION_MINOR).$(VERSION_PATCH)
+
+#-------------------------------------------------------------------------------
+CCCOLOR="\033[34m"
+LINKCOLOR="\033[34;1m"
+SRCCOLOR="\033[33m"
+BINCOLOR="\033[37;1m"
+MAKECOLOR="\033[32;1m"
+ENDCOLOR="\033[0m"
+
+QUIET =  @printf '    %b %b\n' $(CCCOLOR)CC$(ENDCOLOR) $(SRCCOLOR)$@$(ENDCOLOR) 1>&2;
+CC          =  gcc
+CXX         =  g++ -std=c++0x
+CFLAGS      += -g -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wall  -Wno-unused-but-set-variable -Wno-write-strings -DDEBUG
+
+#-------------------------------------------------------------------------------
+
+LOCAL_SRC   += $(sort $(wildcard *.cpp *.c *.pb.cc))
+LOCAL_OBJ   += $(patsubst %.pb.cc,%.pb.o, $(patsubst %.cpp,%.o, $(patsubst %.c,%.o, $(LOCAL_SRC))))
+DEP_FILE    := $(foreach obj, $(LOCAL_OBJ), $(dir $(obj)).$(basename $(notdir $(obj))).d)
+
+#-------------------------------------------------------------------------------
+
+LIB_ROOT   =  /usr/local/commlib
+
+INC_BASE   = -I$(LIB_ROOT)/libbase
+LIB_BASE   = $(LIB_ROOT)/libbase/libbase.a
+
+#INC_SRV   = -I$(LIB_ROOT)/libsrv
+#LIB_SRV   = $(LIB_ROOT)/libsrv/libsrv.a
+INC_SRV   = -I$(LIB_ROOT)/libsrvex
+LIB_SRV   = $(LIB_ROOT)/libsrvex/libsrv.a
+
+INC_YS   = -I$(LIB_ROOT)/libys
+LIB_YS   = $(LIB_ROOT)/libys/libys.a
+
+INC_MYSQL   =   -I/usr/include/mysql/
+LIB_MYSQL   =   /usr/lib64/mysql/libmysqlclient.so
+
+INC_REDIS = -I/usr/local/include/hiredis
+LIB_REDIS = /usr/local/lib/libhiredis.a
+
+INC_PB      =   -I/usr/local/include/
+LIB_PB      =   /usr/local/lib/libprotobuf.a 
+
+INC_JSON      =   -I$(LIB_ROOT)/libjson
+LIB_JSON      =   $(LIB_ROOT)/libjson/libjson.a
+
+INC_OP      =    -I$(LIB_ROOT)/libtool/antisnow -I$(LIB_ROOT)/libtool/dlb
+LIB_OP      =    $(LIB_ROOT)/libtool/antisnow/libantisnow.a  $(LIB_ROOT)/libtool/dlb/libdlb_api.a
+
+INC_FILTER = -I$(LIB_ROOT)/libfilter
+LIB_FILTER = ${LIB_ROOT}/libfilter/libfilter.a
+
+#-------------------------------------------------------------------------------
+PRJ_PATH = /mnt/hgfs/git/gsk/gsk_srv
+#-------------------------------------------------------------------------------
+
+WORK_PATH = $(PRJ_PATH)/src
+BIN_PATH = $(PRJ_PATH)/bin
+
+INC_COMM  = -I$(WORK_PATH)/common
+LIB_COMM  = $(WORK_PATH)/common/common.a
+
+INC_MONGO = -I/usr/local/include/libmongoc-1.0
+LIB_MONGO = /usr/local/lib/libmongoc-1.0.a
+#INC_MONGO = -I/usr/local/mongo/include
+#LIB_MONGO = /usr/local/mongo/lib/libmongoclient.a
+
+
+INC_BSON = -I/usr/local/include/libbson-1.0
+LIB_BSON = /usr/local/lib/libbson-1.0.a
+#INC_BOOST = -I/usr/local/include/boost
+#LIB_BOOST = /usr/local/lib/libboost_system.a /usr/local/lib/libboost_thread.a /usr/local/lib/libboost_filesystem.a /usr/local/lib/libboost_regex.a
+
+INC := -I. $(INC_COMM) $(INC_MYSQL) $(INC_BASE) $(INC_OP) $(INC_SRV) $(INC_YS) $(INC_PB) $(INC_REDIS) $(INC_JSON) $(INC_FILTER) $(INC_BSON) $(INC_MONGO)
+LIB := -L. $(LIB_COMM) $(LIB_MYSQL) $(LIB_BASE) $(LIB_OP) $(LIB_SRV) $(LIB_YS) $(LIB_PB) $(LIB_REDIS) $(LIB_JSON) $(LIB_FILTER) $(LIB_MONGO) $(LIB_BSON) -lrt -lpthread -lssl -lcrypto
+
+#-------------------------------------------------------------------------------

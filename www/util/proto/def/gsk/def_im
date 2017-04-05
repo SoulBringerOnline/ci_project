@@ -1,0 +1,126 @@
+//-----------------------------群附件
+#__MESSAGE_BEGIN__ t_msg_attach
+#__MESSAGE_FILED__ string f_attach_name                                  --附件名称
+#__MESSAGE_FILED__ int f_attach_type                                     --附件类型
+#__MESSAGE_FILED__ string f_attach_url                                   --附件地址
+#__MESSAGE_FILED__ int f_attach_size                                     --附件大小
+#__MESSAGE_FILED__ int f_attach_playtime                                 --附件播放时长
+#__MESSAGE_FILED__ int f_attach_uploadtime                               --附件上传时间
+#__MESSAGE_FILED__ string f_attach_name_hl                               --附件高亮名称
+#__MESSAGE_FILED__ string f_attach_id                                    --附件ID
+#__MESSAGE_END__ t_msg_attach
+
+//-----------------------------任务信息   
+//-----------------------------”XXX发布一个任务“等文字描述放在单条聊天信息f_msg_body中
+//-----------------------------f_operate_type 0：其他(不需要确认的通知)；1：通知任务发起者即将到期提醒接收者；2：通知任务接收者即将到期；
+//-----------------------------3：通知任务发起者提醒接收者查看；4：通知任务接收者查看
+#__MESSAGE_BEGIN__ t_msg_task
+#__MESSAGE_FILED__ string f_task_id                                      --任务id
+#__MESSAGE_FILED__ string f_prj_id                                       --项目id
+#__MESSAGE_FILED__ int f_task_type                                       --任务类型
+#__MESSAGE_FILED__ string f_task_desc                                    --任务描述
+#__MESSAGE_FILED__ int f_task_desc_type                                  --任务描述类型；1：文字，2：语音
+#__MESSAGE_FILED__ string f_position                                     --部位
+#__MESSAGE_FILED__ array int f_receiver_uin                               --消息接收者uin
+#__MESSAGE_FILED__ int f_operate_type                                    --消息通知类型
+#__MESSAGE_FILED__ string f_assign_desc                                  --任务指派描述
+#__MESSAGE_FILED__ int f_task_end                                        --任务结束时间
+#__MESSAGE_FILED__ int f_task_status                                     --任务状态
+#__MESSAGE_FILED__ int f_operate_status                                  --用户操作状态(我知道了，已查看等)
+#__MESSAGE_FILED__ array int f_operate_uin                                --消息操作者uin
+#__MESSAGE_FILED__ int f_attach_playtime                                 --附件播放时长
+#__MESSAGE_FILED__ int f_attach_count                                    --附件个数
+#__MESSAGE_FILED__ int f_job_type                                        --附件个数
+#__MESSAGE_FILED__ pb_prj_t_task_report f_last_report                    --最后一次回报
+#__MESSAGE_END__ t_msg_task
+
+//-----------------------------小助手天气提醒
+#__MESSAGE_BEGIN__ t_msg_weather
+#__MESSAGE_FILED__ string f_prj_id                                       --项目id
+#__MESSAGE_FILED__ string f_prj_name                                     --项目名称
+#__MESSAGE_FILED__ pb_prj_t_weather_base f_weather                       --天气基本信息
+#__MESSAGE_END__ t_msg_weather
+
+//-----------------------------书本类型
+#__MESSAGE_BEGIN__ t_msg_book
+#__MESSAGE_FILED__ int f_book_type                                       --书本类型
+#__MESSAGE_FILED__ string f_book_id                                      --书本id
+#__MESSAGE_FILED__ string f_book_name                                    --书本名称
+#__MESSAGE_FILED__ string f_book_cata_id                                 --一级目录id
+#__MESSAGE_FILED__ string f_book_cata_info                               --一级目录内容
+#__MESSAGE_FILED__ string f_book_subcata_id                              --二级目录id
+#__MESSAGE_FILED__ string f_book_subcata_info                            --二级目录内容
+#__MESSAGE_FILED__ string f_book_info_id                                 --内容id
+#__MESSAGE_FILED__ string f_book_info                                    --内容详情
+#__MESSAGE_END__ t_msg_book
+
+//-----------------------------小助手card
+#__MESSAGE_BEGIN__ t_msg_card
+#__MESSAGE_FILED__ string f_card_title                                   --卡片标题
+#__MESSAGE_FILED__ string f_card_img                                     --卡片图片
+#__MESSAGE_FILED__ string f_card_desc                                    --卡片描述
+#__MESSAGE_FILED__ string f_card_atction                                 --卡片动作
+#__MESSAGE_FILED__ string f_card_frominfo                                --卡片来自于信息
+#__MESSAGE_FILED__ string f_card_finish                                  --卡片完成内容
+#__MESSAGE_FILED__ string f_card_finish_action                           --卡片完成动作
+#__MESSAGE_FILED__ string f_card_extrc                                   --卡片扩展
+#__MESSAGE_END__ t_msg_card
+
+//-----------------------------热点资讯类msg
+#__MESSAGE_BEGIN__ t_msg_hotspot
+#__MESSAGE_FILED__ string f_hotspot_id                                   --热点id
+#__MESSAGE_FILED__ string f_hotspot_title                                --热点标题
+#__MESSAGE_FILED__ string f_hotspot_first_image                          --热点图片
+#__MESSAGE_FILED__ string f_hotspot_source_site                          --热点来源
+#__MESSAGE_END__ t_msg_hotspot
+
+//-----------------------------项目记录基本用户
+#__MESSAGE_BEGIN__ t_msg_prj_record_base_user
+#__MESSAGE_FILED__ int f_uid                                             --用户id
+#__MESSAGE_FILED__ string f_name                                         --用户名称
+#__MESSAGE_FILED__ string f_job_type                                     --用户职位
+#__MESSAGE_END__ t_msg_prj_record_base_user
+
+//-----------------------------项目记录
+#__MESSAGE_BEGIN__ t_msg_prj_record
+#__MESSAGE_FILED__ string f_prj_id                                       --项目id
+#__MESSAGE_FILED__ pb_im_t_msg_prj_record_base_user sender               --发起者
+#__MESSAGE_FILED__ array pb_im_t_msg_prj_record_base_user receivers       --接收者
+#__MESSAGE_FILED__ int record_type                                       --记录类型
+#__MESSAGE_FILED__ pb_im_t_msg_task f_task_info                          --任务修改
+#__MESSAGE_FILED__ pb_prj_t_info f_prj_info                              --项目记录
+#__MESSAGE_FILED__ array pb_prj_t_base_file f_files                       --项目云文件
+#__MESSAGE_END__ t_msg_prj_record
+
+
+//-----------------------------单条聊天信息
+#__MESSAGE_BEGIN__ t_msg_item
+#__MESSAGE_FILED__ string f_msg_id                                       --消息id
+#__MESSAGE_FILED__ uint f_msg_type                                       --消息类型/文本、语音...
+#__MESSAGE_FILED__ string f_msg_body                                     --消息内容
+#__MESSAGE_FILED__ int f_sender_id                                       --消息发送者id
+#__MESSAGE_FILED__ string f_sender_name                                  --消息发送者name
+#__MESSAGE_FILED__ string f_sender_remark                                --消息发送者在该群中的昵称
+#__MESSAGE_FILED__ string f_sender_avatar                                --消息发送者头像
+#__MESSAGE_FILED__ string f_group_id                                     --群组id
+#__MESSAGE_FILED__ uint f_group_type                                     --群组类型
+#__MESSAGE_FILED__ string f_group_name                                   --群组name
+#__MESSAGE_FILED__ string f_group_desc                                   --群组描述
+#__MESSAGE_FILED__ int f_send_time                                       --发送时间
+#__MESSAGE_FILED__ int f_msg_seq_id                                      --消息seq
+#__MESSAGE_FILED__ array pb_im_t_msg_attach f_attch                       --附件
+#__MESSAGE_FILED__ pb_im_t_msg_task f_msg_task                           --任务信息
+#__MESSAGE_FILED__ pb_im_t_msg_weather f_msg_weather                     --天气提醒
+#__MESSAGE_FILED__ pb_im_t_msg_book f_msg_book                           --书本类信息
+#__MESSAGE_FILED__ pb_im_t_msg_card f_msg_card                           --小秘书card
+#__MESSAGE_FILED__ pb_im_t_msg_hotspot f_msg_hotspot                     --资讯
+#__MESSAGE_FILED__ pb_im_t_msg_prj_record f_msg_prj_record               --项目记录
+#__MESSAGE_END__ t_msg_item
+
+//-----------------------------f_group_id中聊天列表
+#__MESSAGE_BEGIN__ t_msg
+#__MESSAGE_FILED__ int f_update_type                                     --1：全量覆盖
+#__MESSAGE_FILED__ string f_group_id                                     --聊天群组id
+#__MESSAGE_FILED__ array pb_im_t_msg_item f_msg                           --该群组中的消息list
+#__MESSAGE_END__ t_msg
+

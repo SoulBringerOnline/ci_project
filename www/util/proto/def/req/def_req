@@ -1,0 +1,146 @@
+#__MESSAGE_BEGIN__ t_attach
+#__MESSAGE_FILED__ string f_attach_name                                  --附件名称
+#__MESSAGE_FILED__ int f_attach_type                                     --附件类型
+#__MESSAGE_FILED__ string f_attach_url                                   --附件地址
+#__MESSAGE_FILED__ int f_attach_size                                     --附件大小
+#__MESSAGE_FILED__ int f_attach_playtime                                 --附件播放时长
+#__MESSAGE_FILED__ int f_attach_uploadtime                               --附件上传时间
+#__MESSAGE_FILED__ string f_attach_id                                    --附件ID
+#__MESSAGE_END__ t_attach
+
+#__MESSAGE_BEGIN__ t_base_file
+#__MESSAGE_FILED__ pb_req_t_attach f_baseinfo                            --基本信息
+#__MESSAGE_FILED__ int f_cre_uin                                         --上传者id
+#__MESSAGE_FILED__ string f_cre_name                                     --上传者姓名
+#__MESSAGE_FILED__ string f_job_type                                     --上传者职位
+#__MESSAGE_FILED__ string f_tag                                          --文件标签
+#__MESSAGE_FILED__ string f_fid                                          --文件id
+#__MESSAGE_FILED__ string f_fpid                                         --文件父文件夹id
+#__MESSAGE_END__ t_base_file
+
+#__MESSAGE_BEGIN__ t_msg_book
+#__MESSAGE_FILED__ int f_book_type                                       --书本类型
+#__MESSAGE_FILED__ string f_book_id                                      --书本id
+#__MESSAGE_FILED__ string f_book_name                                    --书本名称
+#__MESSAGE_FILED__ string f_book_cata_id                                 --一级目录id
+#__MESSAGE_FILED__ string f_book_cata_info                               --一级目录内容
+#__MESSAGE_FILED__ string f_book_subcata_id                              --二级目录id
+#__MESSAGE_FILED__ string f_book_subcata_info                            --二级目录内容
+#__MESSAGE_FILED__ string f_book_info_id                                 --内容id
+#__MESSAGE_FILED__ string f_book_info                                    --内容详情
+#__MESSAGE_END__ t_msg_book
+
+#__MESSAGE_BEGIN__ t_msg_hotspot
+#__MESSAGE_FILED__ string f_hotspot_id                                   --热点id
+#__MESSAGE_FILED__ string f_hotspot_title                                --热点标题
+#__MESSAGE_FILED__ string f_hotspot_first_image                          --热点图片
+#__MESSAGE_FILED__ string f_hotspot_source_site                          --热点来源
+#__MESSAGE_END__ t_msg_hotspot
+
+
+//-----------------------------成员
+#__MESSAGE_BEGIN__ t_user
+#__MESSAGE_FILED__ uint f_uin                                            --用户id
+#__MESSAGE_FILED__ string f_name                                         --用户名称
+#__MESSAGE_FILED__ string f_phone                                        --成员电话
+#__MESSAGE_FILED__ string f_job_type                                     --岗位
+#__MESSAGE_FILED__ string f_join_content                                 --加入项目理由
+#__MESSAGE_FILED__ string f_dep_id                                       --部门id
+#__MESSAGE_END__ t_user
+
+#__MESSAGE_BEGIN__ t_project
+#__MESSAGE_FILED__ string f_prj_name                                     --项目名称
+#__MESSAGE_FILED__ int f_prj_type                                        --项目类型
+#__MESSAGE_FILED__ string f_prj_image                                    --项目图片
+#__MESSAGE_FILED__ string f_province                                     --项目省份
+#__MESSAGE_FILED__ string f_city                                         --项目城市
+#__MESSAGE_FILED__ string f_prj_address                                  --项目地址
+#__MESSAGE_FILED__ int f_floor_area                                      --建筑面积
+#__MESSAGE_FILED__ int f_prj_begin                                       --项目开始日期
+#__MESSAGE_FILED__ int f_prj_end                                         --项目结束日期
+#__MESSAGE_FILED__ string f_jianzhu_danwei                               --建筑单位
+#__MESSAGE_FILED__ string f_shigong_danwei                               --施工单位
+#__MESSAGE_FILED__ string f_jianli_danwei                                --建设单位
+#__MESSAGE_FILED__ string f_fenbao_danwei                                --分包单位
+#__MESSAGE_FILED__ double f_lat                                          --经纬度
+#__MESSAGE_FILED__ double f_lon                                          --经纬度
+#__MESSAGE_FILED__ float f_float_floor_area                              --建筑面积;浮点型
+#__MESSAGE_END__ t_project
+
+
+//-----------------------------任务汇报
+#__MESSAGE_BEGIN__ t_task_report
+#__MESSAGE_FILED__ string f_report_id                                    --汇报id
+#__MESSAGE_FILED__ pb_req_t_user f_sponsor                               --汇报人
+#__MESSAGE_FILED__ pb_req_t_user f_reply_to                              --被回复人
+#__MESSAGE_FILED__ string f_title                                        --汇报标题
+#__MESSAGE_FILED__ string f_content                                      --汇报内容
+#__MESSAGE_FILED__ int f_content_type                                    --汇报内容类型；1：文字，2：语音
+#__MESSAGE_FILED__ int f_playtime                                        --附件播放时间
+#__MESSAGE_FILED__ array pb_req_t_base_file f_attach_list                 --附件列表
+#__MESSAGE_FILED__ int f_report_time                                     --汇报时间
+#__MESSAGE_END__ t_task_report
+
+//-----------------------------任务
+#__MESSAGE_BEGIN__ t_task
+#__MESSAGE_FILED__ string f_task_id                                      --任务id
+#__MESSAGE_FILED__ int f_task_type                                       --任务类型
+#__MESSAGE_FILED__ string f_prj_id                                       --项目id
+#__MESSAGE_FILED__ string f_task_desc                                    --任务描述
+#__MESSAGE_FILED__ int f_task_desc_type                                  --任务描述类型；1：文字，2：语音
+#__MESSAGE_FILED__ int f_playtime                                        --附件播放时间
+#__MESSAGE_FILED__ pb_req_t_user f_sponsor                               --任务发起人
+#__MESSAGE_FILED__ array pb_req_t_user f_members                          --任务接收人
+#__MESSAGE_FILED__ string f_position                                     --部位
+#__MESSAGE_FILED__ int f_task_status                                     --任务状态
+#__MESSAGE_FILED__ array pb_req_t_base_file f_attach_list                 --附件列表
+#__MESSAGE_FILED__ array pb_req_t_task_report f_report_list               --任务汇报列表
+#__MESSAGE_FILED__ int f_task_begin                                      --任务开始时间
+#__MESSAGE_FILED__ int f_task_end                                        --任务结束时间
+#__MESSAGE_END__ t_task
+
+//-----------------------------上报
+#__MESSAGE_BEGIN__ t_report
+#__MESSAGE_FILED__ string f_phone_info                                   --手机信息
+#__MESSAGE_FILED__ string f_os                                           --手机操作系统
+#__MESSAGE_FILED__ string f_sp                                           --手机运营商
+#__MESSAGE_FILED__ string f_network                                      --手机网络
+#__MESSAGE_END__ t_report
+
+//-----------------------------用户数据获取
+#__MESSAGE_BEGIN__ t_user_data_req
+#__MESSAGE_FILED__ int f_flag                                            --用户信息成份标示
+#__MESSAGE_FILED__ array string f_s_args                                  --上报参数列表；如群seqId上报："groupId:seqId",......
+#__MESSAGE_FILED__ int f_pageNO                                          --页码
+#__MESSAGE_FILED__ string f_page_size                                    --页面大小
+#__MESSAGE_END__ t_user_data_req
+
+//-----------------------------项目里程碑
+#__MESSAGE_BEGIN__ t_milestore
+#__MESSAGE_FILED__ int f_time                                            --事件创建时间
+#__MESSAGE_FILED__ string f_event                                        --事件信息
+#__MESSAGE_END__ t_milestore
+
+//-----------------------------项目部门
+#__MESSAGE_BEGIN__ t_department
+#__MESSAGE_FILED__ string f_id                                           --部门id
+#__MESSAGE_FILED__ string f_name                                         --部门名称
+#__MESSAGE_END__ t_department
+
+
+#__MESSAGE_BEGIN__  t_req
+#__MESSAGE_FILED__ int f_cmd                                             
+#__MESSAGE_FILED__ array int f_i_args                                     
+#__MESSAGE_FILED__ array string f_s_args                                  
+#__MESSAGE_FILED__ array pb_req_t_attach f_attch                          
+#__MESSAGE_FILED__ pb_req_t_project f_project                            
+#__MESSAGE_FILED__ array pb_req_t_user f_prj_member                       
+#__MESSAGE_FILED__ pb_req_t_task f_task                                  
+#__MESSAGE_FILED__ pb_req_t_report f_report                              
+#__MESSAGE_FILED__ pb_req_t_user_data_req f_user_data_req                
+#__MESSAGE_FILED__ pb_req_t_msg_book f_msg_book                          
+#__MESSAGE_FILED__ pb_req_t_msg_hotspot f_msg_hotspot                    
+#__MESSAGE_FILED__ array pb_req_t_milestore f_milestore                   --项目里程碑
+#__MESSAGE_FILED__ array pb_req_t_department f_department                 --项目部门
+#__MESSAGE_FILED__ pb_req_t_department f_turn_department                 --转移到其他项目岗位部门
+#__MESSAGE_END__    t_req

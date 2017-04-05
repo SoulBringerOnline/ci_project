@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B098D7D1AE7EA6F001BAC4A /* cfg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B098D361AE7EA6F001BAC4A /* cfg.cpp */; };
+		5B098D7E1AE7EA6F001BAC4A /* client_info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B098D391AE7EA6F001BAC4A /* client_info.cpp */; };
+		5B098D7F1AE7EA6F001BAC4A /* common.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B098D3E1AE7EA6F001BAC4A /* common.a */; };
+		5B098D811AE7EA70001BAC4A /* crc.c in Sources */ = {isa = PBXBuildFile; fileRef = 5B098D3F1AE7EA6F001BAC4A /* crc.c */; };
+		5B098D861AE7EA70001BAC4A /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = 5B098D5B1AE7EA6F001BAC4A /* makefile */; };
+		5B098D871AE7EA70001BAC4A /* mongo_driver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B098D5C1AE7EA6F001BAC4A /* mongo_driver.cpp */; };
+		5B098D881AE7EA70001BAC4A /* redis_info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B098D5F1AE7EA6F001BAC4A /* redis_info.cpp */; };
+		5B098D891AE7EA70001BAC4A /* gsk_gate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B098D661AE7EA6F001BAC4A /* gsk_gate.cpp */; };
+		5B098D8A1AE7EA70001BAC4A /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = 5B098D671AE7EA6F001BAC4A /* makefile */; };
+		5B098D8B1AE7EA70001BAC4A /* gsk_logic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5B098D691AE7EA6F001BAC4A /* gsk_logic.cpp */; };
+		5B098D8C1AE7EA70001BAC4A /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = 5B098D731AE7EA6F001BAC4A /* makefile */; };
+		5B098D931AE7EA70001BAC4A /* makefile in Sources */ = {isa = PBXBuildFile; fileRef = 5B098D7C1AE7EA6F001BAC4A /* makefile */; };
+		5BE893131AE888160034ED58 /* gsk_push_sync.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BE893121AE888160034ED58 /* gsk_push_sync.cpp */; };
+		5BE893171AE88BEE0034ED58 /* gsk_push_gate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BE893161AE88BEE0034ED58 /* gsk_push_gate.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5B5B70021AE6906600C29D24 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5B098D351AE7EA6F001BAC4A /* attr_def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = attr_def.h; sourceTree = "<group>"; };
+		5B098D361AE7EA6F001BAC4A /* cfg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cfg.cpp; sourceTree = "<group>"; };
+		5B098D371AE7EA6F001BAC4A /* cfg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cfg.h; sourceTree = "<group>"; };
+		5B098D381AE7EA6F001BAC4A /* cfg_def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cfg_def.h; sourceTree = "<group>"; };
+		5B098D391AE7EA6F001BAC4A /* client_info.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = client_info.cpp; sourceTree = "<group>"; };
+		5B098D3A1AE7EA6F001BAC4A /* client_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = client_info.h; sourceTree = "<group>"; };
+		5B098D3B1AE7EA6F001BAC4A /* cmd_def.awk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cmd_def.awk; sourceTree = "<group>"; };
+		5B098D3C1AE7EA6F001BAC4A /* cmd_def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmd_def.h; sourceTree = "<group>"; };
+		5B098D3D1AE7EA6F001BAC4A /* cmd_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cmd_info.h; sourceTree = "<group>"; };
+		5B098D3E1AE7EA6F001BAC4A /* common.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = common.a; sourceTree = "<group>"; };
+		5B098D3F1AE7EA6F001BAC4A /* crc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crc.c; sourceTree = "<group>"; };
+		5B098D401AE7EA6F001BAC4A /* crc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crc.h; sourceTree = "<group>"; };
+		5B098D411AE7EA6F001BAC4A /* data_def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = data_def.h; sourceTree = "<group>"; };
+		5B098D421AE7EA6F001BAC4A /* data_def_ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = data_def_ex.h; sourceTree = "<group>"; };
+		5B098D431AE7EA6F001BAC4A /* data_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = data_info.h; sourceTree = "<group>"; };
+		5B098D441AE7EA6F001BAC4A /* data_init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = data_init.h; sourceTree = "<group>"; };
+		5B098D451AE7EA6F001BAC4A /* data_init_ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = data_init_ex.h; sourceTree = "<group>"; };
+		5B098D461AE7EA6F001BAC4A /* def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = def.h; sourceTree = "<group>"; };
+		5B098D471AE7EA6F001BAC4A /* define.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = define.lua; sourceTree = "<group>"; };
+		5B098D481AE7EA6F001BAC4A /* err_def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = err_def.h; sourceTree = "<group>"; };
+		5B098D4C1AE7EA6F001BAC4A /* gsk_mongo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gsk_mongo.h; sourceTree = "<group>"; };
+		5B098D4D1AE7EA6F001BAC4A /* gsk_push.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gsk_push.h; sourceTree = "<group>"; };
+		5B098D4E1AE7EA6F001BAC4A /* gsk_redis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gsk_redis.h; sourceTree = "<group>"; };
+		5B098D581AE7EA6F001BAC4A /* gsk_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gsk_util.h; sourceTree = "<group>"; };
+		5B098D591AE7EA6F001BAC4A /* inc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inc.h; sourceTree = "<group>"; };
+		5B098D5A1AE7EA6F001BAC4A /* macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macro.h; sourceTree = "<group>"; };
+		5B098D5B1AE7EA6F001BAC4A /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		5B098D5C1AE7EA6F001BAC4A /* mongo_driver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mongo_driver.cpp; sourceTree = "<group>"; };
+		5B098D5D1AE7EA6F001BAC4A /* mongo_driver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mongo_driver.h; sourceTree = "<group>"; };
+		5B098D5E1AE7EA6F001BAC4A /* proto.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = proto.sh; sourceTree = "<group>"; };
+		5B098D5F1AE7EA6F001BAC4A /* redis_info.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = redis_info.cpp; sourceTree = "<group>"; };
+		5B098D601AE7EA6F001BAC4A /* redis_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = redis_info.h; sourceTree = "<group>"; };
+		5B098D611AE7EA6F001BAC4A /* srv_log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = srv_log.h; sourceTree = "<group>"; };
+		5B098D621AE7EA6F001BAC4A /* up.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = up.sh; sourceTree = "<group>"; };
+		5B098D631AE7EA6F001BAC4A /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		5B098D641AE7EA6F001BAC4A /* x.awk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = x.awk; sourceTree = "<group>"; };
+		5B098D661AE7EA6F001BAC4A /* gsk_gate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gsk_gate.cpp; sourceTree = "<group>"; };
+		5B098D671AE7EA6F001BAC4A /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		5B098D691AE7EA6F001BAC4A /* gsk_logic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gsk_logic.cpp; sourceTree = "<group>"; };
+		5B098D6A1AE7EA6F001BAC4A /* gsk_logic_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gsk_logic_common.h; sourceTree = "<group>"; };
+		5B098D6B1AE7EA6F001BAC4A /* gsk_logic_handle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gsk_logic_handle.h; sourceTree = "<group>"; };
+		5B098D6C1AE7EA6F001BAC4A /* gsk_logic_init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gsk_logic_init.h; sourceTree = "<group>"; };
+		5B098D6D1AE7EA6F001BAC4A /* gsk_logic_op.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gsk_logic_op.h; sourceTree = "<group>"; };
+		5B098D6E1AE7EA6F001BAC4A /* gsk_logic_temp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gsk_logic_temp.h; sourceTree = "<group>"; };
+		5B098D6F1AE7EA6F001BAC4A /* gsk_logic_util_comm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gsk_logic_util_comm.h; sourceTree = "<group>"; };
+		5B098D701AE7EA6F001BAC4A /* gsk_logic_util_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gsk_logic_util_data.h; sourceTree = "<group>"; };
+		5B098D721AE7EA6F001BAC4A /* gsk_logic_util_prompt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gsk_logic_util_prompt.h; sourceTree = "<group>"; };
+		5B098D731AE7EA6F001BAC4A /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		5B098D7C1AE7EA6F001BAC4A /* makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = makefile; sourceTree = "<group>"; };
+		5BE893111AE884C90034ED58 /* gsk_srv */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = gsk_srv; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BE893121AE888160034ED58 /* gsk_push_sync.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gsk_push_sync.cpp; sourceTree = "<group>"; };
+		5BE893161AE88BEE0034ED58 /* gsk_push_gate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gsk_push_gate.cpp; sourceTree = "<group>"; };
+		5BE893181AE8E4FB0034ED58 /* gsk_logic_user.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gsk_logic_user.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B5B70011AE6906600C29D24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B098D7F1AE7EA6F001BAC4A /* common.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B098D341AE7EA6F001BAC4A /* common */ = {
+			isa = PBXGroup;
+			children = (
+				5B098D351AE7EA6F001BAC4A /* attr_def.h */,
+				5B098D361AE7EA6F001BAC4A /* cfg.cpp */,
+				5B098D371AE7EA6F001BAC4A /* cfg.h */,
+				5B098D381AE7EA6F001BAC4A /* cfg_def.h */,
+				5B098D391AE7EA6F001BAC4A /* client_info.cpp */,
+				5B098D3A1AE7EA6F001BAC4A /* client_info.h */,
+				5B098D3B1AE7EA6F001BAC4A /* cmd_def.awk */,
+				5B098D3C1AE7EA6F001BAC4A /* cmd_def.h */,
+				5B098D3D1AE7EA6F001BAC4A /* cmd_info.h */,
+				5B098D3E1AE7EA6F001BAC4A /* common.a */,
+				5B098D3F1AE7EA6F001BAC4A /* crc.c */,
+				5B098D401AE7EA6F001BAC4A /* crc.h */,
+				5B098D411AE7EA6F001BAC4A /* data_def.h */,
+				5B098D421AE7EA6F001BAC4A /* data_def_ex.h */,
+				5B098D431AE7EA6F001BAC4A /* data_info.h */,
+				5B098D441AE7EA6F001BAC4A /* data_init.h */,
+				5B098D451AE7EA6F001BAC4A /* data_init_ex.h */,
+				5B098D461AE7EA6F001BAC4A /* def.h */,
+				5B098D471AE7EA6F001BAC4A /* define.lua */,
+				5B098D481AE7EA6F001BAC4A /* err_def.h */,
+				5B098D4C1AE7EA6F001BAC4A /* gsk_mongo.h */,
+				5B098D4D1AE7EA6F001BAC4A /* gsk_push.h */,
+				5B098D4E1AE7EA6F001BAC4A /* gsk_redis.h */,
+				5B098D581AE7EA6F001BAC4A /* gsk_util.h */,
+				5B098D591AE7EA6F001BAC4A /* inc.h */,
+				5B098D5A1AE7EA6F001BAC4A /* macro.h */,
+				5B098D5B1AE7EA6F001BAC4A /* makefile */,
+				5B098D5C1AE7EA6F001BAC4A /* mongo_driver.cpp */,
+				5B098D5D1AE7EA6F001BAC4A /* mongo_driver.h */,
+				5B098D5E1AE7EA6F001BAC4A /* proto.sh */,
+				5B098D5F1AE7EA6F001BAC4A /* redis_info.cpp */,
+				5B098D601AE7EA6F001BAC4A /* redis_info.h */,
+				5B098D611AE7EA6F001BAC4A /* srv_log.h */,
+				5B098D621AE7EA6F001BAC4A /* up.sh */,
+				5B098D631AE7EA6F001BAC4A /* util.h */,
+				5B098D641AE7EA6F001BAC4A /* x.awk */,
+			);
+			name = common;
+			path = ../src/common;
+			sourceTree = "<group>";
+		};
+		5B098D651AE7EA6F001BAC4A /* gate */ = {
+			isa = PBXGroup;
+			children = (
+				5B098D661AE7EA6F001BAC4A /* gsk_gate.cpp */,
+				5B098D671AE7EA6F001BAC4A /* makefile */,
+			);
+			name = gate;
+			path = ../src/gate;
+			sourceTree = "<group>";
+		};
+		5B098D681AE7EA6F001BAC4A /* logic */ = {
+			isa = PBXGroup;
+			children = (
+				5BE893181AE8E4FB0034ED58 /* gsk_logic_user.h */,
+				5B098D691AE7EA6F001BAC4A /* gsk_logic.cpp */,
+				5B098D6A1AE7EA6F001BAC4A /* gsk_logic_common.h */,
+				5B098D6B1AE7EA6F001BAC4A /* gsk_logic_handle.h */,
+				5B098D6C1AE7EA6F001BAC4A /* gsk_logic_init.h */,
+				5B098D6D1AE7EA6F001BAC4A /* gsk_logic_op.h */,
+				5B098D6E1AE7EA6F001BAC4A /* gsk_logic_temp.h */,
+				5B098D6F1AE7EA6F001BAC4A /* gsk_logic_util_comm.h */,
+				5B098D701AE7EA6F001BAC4A /* gsk_logic_util_data.h */,
+				5B098D721AE7EA6F001BAC4A /* gsk_logic_util_prompt.h */,
+				5B098D731AE7EA6F001BAC4A /* makefile */,
+			);
+			name = logic;
+			path = ../src/logic;
+			sourceTree = "<group>";
+		};
+		5B098D741AE7EA6F001BAC4A /* push */ = {
+			isa = PBXGroup;
+			children = (
+				5BE893161AE88BEE0034ED58 /* gsk_push_gate.cpp */,
+				5BE893121AE888160034ED58 /* gsk_push_sync.cpp */,
+				5B098D7C1AE7EA6F001BAC4A /* makefile */,
+			);
+			name = push;
+			path = ../src/push;
+			sourceTree = "<group>";
+		};
+		5B5B6FFB1AE6906600C29D24 = {
+			isa = PBXGroup;
+			children = (
+				5B098D341AE7EA6F001BAC4A /* common */,
+				5B098D651AE7EA6F001BAC4A /* gate */,
+				5B098D681AE7EA6F001BAC4A /* logic */,
+				5B098D741AE7EA6F001BAC4A /* push */,
+				5BE893111AE884C90034ED58 /* gsk_srv */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B5B70031AE6906600C29D24 /* gsk_srv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B5B700B1AE6906600C29D24 /* Build configuration list for PBXNativeTarget "gsk_srv" */;
+			buildPhases = (
+				5B5B70001AE6906600C29D24 /* Sources */,
+				5B5B70011AE6906600C29D24 /* Frameworks */,
+				5B5B70021AE6906600C29D24 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gsk_srv;
+			productName = gsk_srv;
+			productReference = 5BE893111AE884C90034ED58 /* gsk_srv */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B5B6FFC1AE6906600C29D24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = zhaoys;
+				TargetAttributes = {
+					5B5B70031AE6906600C29D24 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = 5B5B6FFF1AE6906600C29D24 /* Build configuration list for PBXProject "gsk_srv" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5B5B6FFB1AE6906600C29D24;
+			productRefGroup = 5B5B6FFB1AE6906600C29D24;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B5B70031AE6906600C29D24 /* gsk_srv */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B5B70001AE6906600C29D24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B098D871AE7EA70001BAC4A /* mongo_driver.cpp in Sources */,
+				5BE893131AE888160034ED58 /* gsk_push_sync.cpp in Sources */,
+				5B098D8A1AE7EA70001BAC4A /* makefile in Sources */,
+				5B098D931AE7EA70001BAC4A /* makefile in Sources */,
+				5B098D881AE7EA70001BAC4A /* redis_info.cpp in Sources */,
+				5B098D8B1AE7EA70001BAC4A /* gsk_logic.cpp in Sources */,
+				5B098D891AE7EA70001BAC4A /* gsk_gate.cpp in Sources */,
+				5B098D8C1AE7EA70001BAC4A /* makefile in Sources */,
+				5BE893171AE88BEE0034ED58 /* gsk_push_gate.cpp in Sources */,
+				5B098D811AE7EA70001BAC4A /* crc.c in Sources */,
+				5B098D7E1AE7EA6F001BAC4A /* client_info.cpp in Sources */,
+				5B098D7D1AE7EA6F001BAC4A /* cfg.cpp in Sources */,
+				5B098D861AE7EA70001BAC4A /* makefile in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5B5B70091AE6906600C29D24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5B5B700A1AE6906600C29D24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5B5B700C1AE6906600C29D24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/zhaoys/WorkStation/git/gsk/gsk_srv/src/common,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5B5B700D1AE6906600C29D24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/zhaoys/WorkStation/git/gsk/gsk_srv/src/common,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B5B6FFF1AE6906600C29D24 /* Build configuration list for PBXProject "gsk_srv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B5B70091AE6906600C29D24 /* Debug */,
+				5B5B700A1AE6906600C29D24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B5B700B1AE6906600C29D24 /* Build configuration list for PBXNativeTarget "gsk_srv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B5B700C1AE6906600C29D24 /* Debug */,
+				5B5B700D1AE6906600C29D24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B5B6FFC1AE6906600C29D24 /* Project object */;
+}

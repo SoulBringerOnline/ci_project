@@ -1,0 +1,229 @@
+//-----------------------------项目中通讯录用户
+#__MESSAGE_BEGIN__ t_user
+#__MESSAGE_FILED__ int f_uid                                             --用户id
+#__MESSAGE_FILED__ string f_name                                         --成员名称
+#__MESSAGE_FILED__ string f_phone                                        --成员电话
+#__MESSAGE_FILED__ string f_job_type                                     --岗位
+#__MESSAGE_FILED__ int f_add_time                                        --添加时间
+#__MESSAGE_FILED__ int f_task_operate_status                             --任务成员，任务操作状态；0:默认，1:已查看，.....
+#__MESSAGE_FILED__ string f_join_content                                 --加入项目理由
+#__MESSAGE_FILED__ string f_name_pinyin                                  --用户名称拼音
+#__MESSAGE_FILED__ string f_dep_id                                       --部门id
+#__MESSAGE_END__ t_user
+
+//-----------------------------项目FEED
+#__MESSAGE_BEGIN__ t_feed
+#__MESSAGE_FILED__ int f_time                                            --feed产生时间
+#__MESSAGE_FILED__ string f_msg                                          --feed内容
+#__MESSAGE_END__ t_feed
+
+//-----------------------------项目里程碑
+#__MESSAGE_BEGIN__ t_milestore
+#__MESSAGE_FILED__ int f_time                                            --事件创建时间
+#__MESSAGE_FILED__ string f_event                                        --事件信息
+#__MESSAGE_END__ t_milestore
+
+
+//-----------------------------任务
+#__MESSAGE_BEGIN__ t_task
+#__MESSAGE_FILED__ string f_task_id                                      --任务id
+#__MESSAGE_FILED__ string f_prj_id                                       --项目id
+#__MESSAGE_FILED__ int f_task_type                                       --任务类型
+#__MESSAGE_FILED__ string f_task_desc                                    --任务描述
+#__MESSAGE_FILED__ int f_task_desc_type                                  --任务描述类型；1：文字，2：语音
+#__MESSAGE_FILED__ int f_playtime                                        --附件播放时间
+#__MESSAGE_FILED__ pb_prj_t_user f_sponsor                               --任务发起人
+#__MESSAGE_FILED__ array pb_prj_t_user f_members                          --任务接收人
+#__MESSAGE_FILED__ int f_task_status                                     --任务状态
+#__MESSAGE_FILED__ string f_position                                     --部位
+#__MESSAGE_FILED__ array pb_prj_t_base_file f_attach_list                 --附件列表
+#__MESSAGE_FILED__ int f_task_begin                                      --任务开始时间
+#__MESSAGE_FILED__ int f_task_end                                        --任务结束时间
+#__MESSAGE_END__ t_task
+
+//-----------------------------任务汇报
+#__MESSAGE_BEGIN__ t_task_report
+#__MESSAGE_FILED__ string f_report_id                                    --汇报id
+#__MESSAGE_FILED__ pb_prj_t_user f_sponsor                               --汇报人
+#__MESSAGE_FILED__ pb_prj_t_user f_reply_to                              --被回复人
+#__MESSAGE_FILED__ string f_title                                        --汇报标题
+#__MESSAGE_FILED__ string f_content                                      --汇报内容
+#__MESSAGE_FILED__ int f_content_type                                    --汇报内容类型；1：文字，2：语音
+#__MESSAGE_FILED__ int f_playtime                                        --附件播放时间
+#__MESSAGE_FILED__ array pb_prj_t_base_file f_attach_list                 --附件列表
+#__MESSAGE_FILED__ int f_report_time                                     --汇报时间
+#__MESSAGE_FILED__ int f_report_type                                     --汇报类型；0：系统，1：用户
+#__MESSAGE_END__ t_task_report
+
+//-----------------------------任务查看信息
+#__MESSAGE_BEGIN__ t_task_view
+#__MESSAGE_FILED__ int f_uin                                             --查看者id
+#__MESSAGE_FILED__ string f_name                                         --查看者昵称
+#__MESSAGE_FILED__ string f_avatar                                       --查看者头像
+#__MESSAGE_FILED__ int f_time                                            --查看时间
+#__MESSAGE_END__ t_task_view
+
+//-----------------------------任务详情
+#__MESSAGE_BEGIN__ t_task_details
+#__MESSAGE_FILED__ pb_prj_t_task f_task                                  --任务信息
+#__MESSAGE_FILED__ array pb_prj_t_task_report f_report_list               --汇报记录
+#__MESSAGE_FILED__ int f_report_count                                    --汇报次数
+#__MESSAGE_FILED__ array pb_prj_t_task_view f_view_list                   --查看记录
+#__MESSAGE_FILED__ int f_view_count                                      --查看次数
+#__MESSAGE_FILED__ array string f_position_list                           --常用部位列表
+#__MESSAGE_END__ t_task_details
+
+//-----------------------------任务列表
+#__MESSAGE_BEGIN__ t_task_list
+#__MESSAGE_FILED__ string f_prj_id                                       --项目id
+#__MESSAGE_FILED__ int f_update_type                                     --1:全量覆盖2:追加
+#__MESSAGE_FILED__ int f_list_type                                       --列表数据类型；0:全部,1:未完成,2:延期,3:我的全部,4:我的未完成,5:我的延期
+#__MESSAGE_FILED__ string f_last_update_tid                              --最后变化的任务id
+#__MESSAGE_FILED__ array pb_prj_t_task f_tasks                            --项目任务列表
+#__MESSAGE_FILED__ int f_count                                           --该分类下的任务数
+#__MESSAGE_END__ t_task_list
+
+//-----------------------------项目天气基本信息
+#__MESSAGE_BEGIN__ t_weather_base
+#__MESSAGE_FILED__ string f_current_tem                                  
+#__MESSAGE_FILED__ string f_weather_info                                 
+#__MESSAGE_FILED__ string f_date                                         
+#__MESSAGE_FILED__ int f_weather_type                                    
+#__MESSAGE_FILED__ string f_reminder                                     
+#__MESSAGE_FILED__ string f_air_quality                                  
+#__MESSAGE_FILED__ int f_air_quality_date                                
+#__MESSAGE_FILED__ string f_province                                     --项目省份
+#__MESSAGE_FILED__ string f_city                                         --项目城市
+#__MESSAGE_END__ t_weather_base
+
+//-----------------------------项目天气提醒信息
+#__MESSAGE_BEGIN__ t_reminder
+#__MESSAGE_FILED__ int f_reminder_type                                   
+#__MESSAGE_FILED__ string f_reminder_title                               
+#__MESSAGE_FILED__ array string f_reminder_infos                          
+#__MESSAGE_END__ t_reminder
+
+//-----------------------------天气详细信息
+#__MESSAGE_BEGIN__ t_weather_details
+#__MESSAGE_FILED__ string f_hight_tem                                    
+#__MESSAGE_FILED__ string f_low_tem                                      
+#__MESSAGE_FILED__ string f_current_tem                                  
+#__MESSAGE_FILED__ string f_weather_info                                 
+#__MESSAGE_FILED__ string f_wind_direction                               
+#__MESSAGE_FILED__ string f_wind_power                                   
+#__MESSAGE_FILED__ string f_date                                         
+#__MESSAGE_FILED__ string f_modify_time                                  
+#__MESSAGE_FILED__ int f_weather_type                                    
+#__MESSAGE_FILED__ array pb_prj_t_reminder f_reminders                    
+#__MESSAGE_FILED__ string f_air_quality                                  
+#__MESSAGE_FILED__ int f_air_quality_date                                
+#__MESSAGE_END__ t_weather_details
+
+//-----------------------------项目天气详细信息
+#__MESSAGE_BEGIN__ t_prj_weather
+#__MESSAGE_FILED__ string f_prj_id                                       --项目id
+#__MESSAGE_FILED__ array pb_prj_t_weather_details f_weather_info          --项目天气
+#__MESSAGE_END__ t_prj_weather
+
+//-----------------------------项目基本信息
+#__MESSAGE_BEGIN__ t_info
+#__MESSAGE_FILED__ string f_prj_id                                       --项目id
+#__MESSAGE_FILED__ string f_prj_name                                     --项目名称
+#__MESSAGE_FILED__ int f_prj_type                                        --项目类型
+#__MESSAGE_FILED__ string f_prj_image                                    --项目图片
+#__MESSAGE_FILED__ string f_group_id                                     --群组id
+#__MESSAGE_FILED__ string f_province                                     --项目省份
+#__MESSAGE_FILED__ string f_city                                         --项目城市
+#__MESSAGE_FILED__ string f_prj_address                                  --项目地址
+#__MESSAGE_FILED__ int f_member_count                                    --项目成员数量
+#__MESSAGE_FILED__ int f_floor_area                                      --建筑面积
+#__MESSAGE_FILED__ int f_prj_begin                                       --项目开始日期
+#__MESSAGE_FILED__ int f_prj_end                                         --项目结束日期
+#__MESSAGE_FILED__ string f_jianzhu_danwei                               --建筑单位
+#__MESSAGE_FILED__ string f_shigong_danwei                               --施工单位
+#__MESSAGE_FILED__ string f_jianli_danwei                                --建设单位
+#__MESSAGE_FILED__ string f_fenbao_danwei                                --分包单位
+#__MESSAGE_FILED__ double f_lat                                          --经纬度
+#__MESSAGE_FILED__ double f_lon                                          --经纬度
+#__MESSAGE_FILED__ string f_job_type                                     --岗位
+#__MESSAGE_FILED__ string f_other_info                                   --其他的一些信息
+#__MESSAGE_FILED__ string f_sms_msg                                      --短信通知信息
+#__MESSAGE_FILED__ array pb_prj_t_task f_owner_tasks                      --项目任务列表
+#__MESSAGE_FILED__ int f_owner_tasks_cnt                                 --项目任务个数
+#__MESSAGE_FILED__ int f_add_time                                        --项目创建时间
+#__MESSAGE_FILED__ int f_creater_uin                                     --项目创建者id
+#__MESSAGE_FILED__ pb_prj_t_weather_base f_weather                       --项目天气
+#__MESSAGE_FILED__ string f_prj_my_job                                   --我的项目岗位
+#__MESSAGE_FILED__ int f_owner_add_time                                  --个人加入时间
+#__MESSAGE_FILED__ float f_float_floor_area                              --建筑面积:
+#__MESSAGE_END__ t_info
+
+//-----------------------------项目日志
+#__MESSAGE_BEGIN__ t_log
+#__MESSAGE_FILED__ string f_log_content                                  --项目名称
+#__MESSAGE_FILED__ int f_add_time                                        --项目二维码
+#__MESSAGE_END__ t_log
+
+
+#__MESSAGE_BEGIN__ t_prj
+#__MESSAGE_FILED__ int f_update_type                                     --1:全量覆盖2:追加
+#__MESSAGE_FILED__ array pb_prj_t_info f_prjs                             --项目列表
+#__MESSAGE_END__ t_prj
+
+
+//-----------------------------推荐项目基本信息
+#__MESSAGE_BEGIN__ t_recommend_info
+#__MESSAGE_FILED__ pb_prj_t_info f_info                                  --项目基本信息
+#__MESSAGE_FILED__ uint f_type                                           --推荐类型
+#__MESSAGE_FILED__ int f_weight                                          --权重
+#__MESSAGE_FILED__ string f_other_info                                   --其他的一些信息
+#__MESSAGE_END__ t_recommend_info
+
+#__MESSAGE_BEGIN__ t_recommend_prj
+#__MESSAGE_FILED__ int f_update_type                                     --1:全量覆盖2:追加
+#__MESSAGE_FILED__ array pb_prj_t_recommend_info f_prjs                   --项目列表
+#__MESSAGE_FILED__ int f_prjs_cnt                                        --项目个数
+#__MESSAGE_END__ t_recommend_prj
+
+
+#__MESSAGE_BEGIN__ t_base_file
+#__MESSAGE_FILED__ pb_im_t_msg_attach f_baseinfo                         --基本信息
+#__MESSAGE_FILED__ int f_cre_uin                                         --上传者id
+#__MESSAGE_FILED__ string f_cre_name                                     --上传者姓名
+#__MESSAGE_FILED__ string f_job_type                                     --上传者职位
+#__MESSAGE_FILED__ string f_tag                                          --文件标签
+#__MESSAGE_FILED__ string f_fid                                          --文件id
+#__MESSAGE_FILED__ string f_fpid                                         --文件父文件夹id
+#__MESSAGE_END__ t_base_file
+
+#__MESSAGE_BEGIN__ t_file
+#__MESSAGE_FILED__ int f_update_type                                     --1:全量覆盖2:追加
+#__MESSAGE_FILED__ string f_prj_id                                       --项目id
+#__MESSAGE_FILED__ array pb_prj_t_base_file f_files                       --项目文件
+#__MESSAGE_FILED__ int f_files_cnt                                       --项目文件总数
+#__MESSAGE_END__ t_file
+
+//-----------------------------项目部门
+#__MESSAGE_BEGIN__ t_department
+#__MESSAGE_FILED__ string f_id                                           --部门id
+#__MESSAGE_FILED__ string f_name                                         --部门名称
+#__MESSAGE_END__ t_department
+
+
+//-----------------------------项目详情
+#__MESSAGE_BEGIN__ t_details
+#__MESSAGE_FILED__ pb_prj_t_info f_info                                  --项目基本信息
+#__MESSAGE_FILED__ pb_clt_t_group f_im_group                             --项目群组
+#__MESSAGE_FILED__ int f_task_total_count                                --项目任务总数
+#__MESSAGE_FILED__ int f_task_unfinished_count                           --项目任务未完成数
+#__MESSAGE_FILED__ int f_task_delay_count                                --项目任务延期数
+#__MESSAGE_FILED__ int f_prj_all_day_count                               --项目总天数
+#__MESSAGE_FILED__ int f_prj_remain_day_count                            --项目剩余天数
+#__MESSAGE_FILED__ array pb_prj_t_user f_users                            --项目通讯录用户列表
+#__MESSAGE_FILED__ array pb_prj_t_user f_app_users                        --项目app用户列表
+#__MESSAGE_FILED__ pb_clt_t_friend f_frd                                 --项目申请加入成员
+#__MESSAGE_FILED__ array pb_prj_t_feed f_feeds                            --项目FEED
+#__MESSAGE_FILED__ array pb_prj_t_log f_prj_log                           --项目日志列表
+#__MESSAGE_FILED__ array pb_prj_t_milestore f_milestore                   --项目里程碑
+#__MESSAGE_FILED__ array pb_prj_t_department f_department                 --项目部门
+#__MESSAGE_END__ t_details

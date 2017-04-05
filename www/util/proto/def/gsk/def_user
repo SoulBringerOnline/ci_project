@@ -1,0 +1,120 @@
+//-----------------------------用户PROFILE
+#__MESSAGE_BEGIN__ t_info
+#__MESSAGE_FILED__ uint f_uin                                            --用户id
+#__MESSAGE_FILED__ string f_province                                     --省份
+#__MESSAGE_FILED__ string f_city                                         --城市
+#__MESSAGE_FILED__ string f_phone                                        --手机号
+#__MESSAGE_FILED__ string f_name                                         --昵称
+#__MESSAGE_FILED__ string f_company_type                                 --公司类型
+#__MESSAGE_FILED__ string f_company                                      --公司类型
+#__MESSAGE_FILED__ string f_years_of_working                             --工作年限
+#__MESSAGE_FILED__ string f_job_type                                     --岗位
+#__MESSAGE_FILED__ string f_job_title                                    --职称
+#__MESSAGE_FILED__ int f_influence                                       --影响力
+#__MESSAGE_FILED__ int f_setting                                         --用户设置（bitmap方式）
+#__MESSAGE_FILED__ string f_name_pinyin                                  --昵称全拼
+#__MESSAGE_FILED__ string f_name_pinyin_j                                --昵称简拼
+#__MESSAGE_FILED__ int f_type                                            --用户类型
+#__MESSAGE_FILED__ string f_tea_key                                      --用户解密key
+#__MESSAGE_FILED__ int f_go_on_day                                       --用户连续登陆天数
+#__MESSAGE_FILED__ int f_degree                                          --用户活跃度
+#__MESSAGE_FILED__ string f_code_id                                      --用户身份id
+#__MESSAGE_FILED__ int f_avatar_version                                  --用户头像版本
+#__MESSAGE_END__ t_info
+
+//-----------------------------用户系统参数
+#__MESSAGE_BEGIN__ t_extra
+#__MESSAGE_FILED__ int f_auto_inc_id                                     --用户自增id
+#__MESSAGE_FILED__ int f_last_req_time                                   --用户最后一次通信时间
+#__MESSAGE_END__ t_extra
+
+
+//-----------------------------用户好友
+#__MESSAGE_BEGIN__ t_friend
+#__MESSAGE_FILED__ uint f_uin                                            --好友uin
+#__MESSAGE_FILED__ string f_name                                         --好友昵称
+#__MESSAGE_FILED__ string f_remark                                       --好友备注
+#__MESSAGE_FILED__ string f_phone                                        --手机号
+#__MESSAGE_FILED__ string f_msg                                          --消息
+#__MESSAGE_FILED__ int f_flag                                            --好友状态
+#__MESSAGE_FILED__ string f_group_id                                     --聊天群组id
+#__MESSAGE_FILED__ string f_initial                                      --首字母
+#__MESSAGE_FILED__ int f_weight                                          --权重
+#__MESSAGE_FILED__ string f_name_pinyin                                  --昵称全拼
+#__MESSAGE_FILED__ string f_name_pinyin_j                                --昵称简拼
+#__MESSAGE_FILED__ string f_remark_pinyin                                --备注全拼
+#__MESSAGE_FILED__ string f_remark_pinyin_j                              --备注简拼
+#__MESSAGE_FILED__ int f_add_time                                        --加入时间
+#__MESSAGE_FILED__ string f_province                                     --省份
+#__MESSAGE_FILED__ string f_city                                         --城市
+#__MESSAGE_FILED__ string f_company_type                                 --公司类型
+#__MESSAGE_FILED__ string f_job_type                                     --岗位
+#__MESSAGE_FILED__ int f_validation_add_time                             --添加验证列表时间
+#__MESSAGE_END__ t_friend
+
+
+//-----------------------------用户推荐好友
+#__MESSAGE_BEGIN__ t_recommend_friend
+#__MESSAGE_FILED__ uint f_uin                                            --好友uin
+#__MESSAGE_FILED__ string f_name                                         --好友昵称
+#__MESSAGE_FILED__ uint f_type                                           --推荐类型
+#__MESSAGE_FILED__ int f_weight                                          --权重
+#__MESSAGE_FILED__ string f_name_pinyin                                  --昵称全拼
+#__MESSAGE_FILED__ string f_name_pinyin_j                                --昵称简拼
+#__MESSAGE_FILED__ string f_company_type                                 --公司类型
+#__MESSAGE_FILED__ string f_company                                      --公司名称
+#__MESSAGE_FILED__ string f_other_info                                   --显示信息
+#__MESSAGE_END__ t_recommend_friend
+
+
+
+//-----------------------------用户上传的通讯录
+#__MESSAGE_BEGIN__ t_phone_address
+#__MESSAGE_FILED__ string f_name                                         --好友昵称
+#__MESSAGE_FILED__ string f_phone                                        --好友手机号
+#__MESSAGE_END__ t_phone_address
+
+//-----------------------------用户聊天群组
+#__MESSAGE_BEGIN__ t_im_group 
+#__MESSAGE_FILED__ string f_group_id                                     --聊天群组id
+#__MESSAGE_FILED__ int f_group_flag                                      --聊天群组id
+#__MESSAGE_END__ t_im_group
+
+
+//-----------------------------用户项目列表
+#__MESSAGE_BEGIN__ t_prj
+#__MESSAGE_FILED__ string f_prj_id                                       --项目id
+#__MESSAGE_FILED__ string f_group_id                                     --群组id
+#__MESSAGE_END__ t_prj
+
+//-----------------------------用户收藏
+#__MESSAGE_BEGIN__ t_collection
+#__MESSAGE_FILED__ string f_collection_id                                --id
+#__MESSAGE_FILED__ pb_im_t_msg_item f_msg                                --对应的msg
+#__MESSAGE_FILED__ int f_time                                            --收藏时间
+#__MESSAGE_FILED__ int f_type                                            --收藏类型
+#__MESSAGE_END__ t_collection
+
+
+//-----------------------------用户收藏列表
+#__MESSAGE_BEGIN__ t_collection_list
+#__MESSAGE_FILED__ int f_update_type                                     --1：全量覆盖
+#__MESSAGE_FILED__ array pb_user_t_collection f_collections               --收藏列表
+#__MESSAGE_FILED__ int f_collections_cnt                                 --收藏列表总数
+#__MESSAGE_END__ t_collection_list
+
+
+//-----------------------------用户存储结构
+#__MESSAGE_BEGIN__ t_data
+#__MESSAGE_FILED__ pb_user_t_info f_info                                 --用户profile
+#__MESSAGE_FILED__ pb_user_t_extra f_extra                               --用户额外参数
+#__MESSAGE_FILED__ array pb_user_t_friend f_friend_list                   --用户好友
+#__MESSAGE_FILED__ array pb_user_t_friend f_friend_validation_list        --验证列表
+#__MESSAGE_FILED__ array pb_user_t_friend f_friend_recommend_list         --用户推荐
+#__MESSAGE_FILED__ array pb_user_t_im_group f_im_group                    --我的群聊
+#__MESSAGE_FILED__ pb_user_t_info f_other_info                           --好友profile
+#__MESSAGE_FILED__ array pb_user_t_prj f_prj_list                         --我的项目
+#__MESSAGE_FILED__ array pb_user_t_recommend_friend f_recommend_friends   --推荐好友
+#__MESSAGE_FILED__ array pb_prj_t_recommend_info f_prjs                   --推荐项目列表
+
+#__MESSAGE_END__ t_data

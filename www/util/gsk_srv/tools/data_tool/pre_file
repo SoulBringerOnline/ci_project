@@ -1,0 +1,10 @@
+#TABLE_BEGIN____
+#TYPE_TABLE____ t_config ConfigInfo 2
+#TYPE_FIELD____ t_config ConfigInfo 1 f_id uint64_t id 
+#TYPE_FIELD____ t_config ConfigInfo 2 f_value string strValue
+#TABLE_END____ t_config
+#TABLE_BEGIN____
+#TYPE_TABLE____ t_version VersionInfo 2
+#TYPE_FIELD____ t_version VersionInfo 1 f_id uint64_t id 
+#TYPE_FIELD____ t_version VersionInfo 2 f_desc string strDesc
+#TABLE_END____ t_version

@@ -1,0 +1,1 @@
+ls taal_* | sed 's/taal_/gsk_/' | awk '{print "mv ",$1,$1}' | sed 's/gsk_/taal_/' > 1
