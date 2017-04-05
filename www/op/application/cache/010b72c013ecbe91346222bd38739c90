@@ -1,0 +1,1015 @@
+a:2:{s:6:"expire";i:1450171704;s:7:"headers";a:0:{}}ENDCI---><!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>筑友</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+  <link href="http://127.0.0.1:5001/op/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="http://127.0.0.1:5001/op/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="http://127.0.0.1:5001/op/assets/css/pixel-admin.min.css" rel="stylesheet" type="text/css">
+  <link href="http://127.0.0.1:5001/op/assets/css/widgets.min.css" rel="stylesheet" type="text/css">
+  <link href="http://127.0.0.1:5001/op/assets/css/pages.min.css" rel="stylesheet" type="text/css">
+  <link href="http://127.0.0.1:5001/op/assets/css/rtl.min.css" rel="stylesheet" type="text/css">
+  <link href="http://127.0.0.1:5001/op/assets/css/themes.min.css" rel="stylesheet" type="text/css">
+  <link href="http://127.0.0.1:5001/op/assets/css/style.css" rel="stylesheet" type="text/css">
+  
+  <script src="http://127.0.0.1:5001/op/assets/js/jquery.min.js"></script>
+  <script src="http://127.0.0.1:5001/op/assets/js/bootstrap.min.js"></script>
+  <script src="http://127.0.0.1:5001/op/assets/js/pixel-admin.min.js"></script>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="http://127.0.0.1:5001/op/favicon.ico" >
+
+</head>
+<body class="theme-asphalt">
+<script>var init = [];</script>
+<div id="main-wrapper">
+
+	<!-- $MAIN_NAVIGATION -->
+  <div id="main-navbar" class="navbar navbar-inverse" role="navigation">
+    <!-- Main menu toggle -->
+    <button type="button" id="main-menu-toggle"><i class="navbar-icon fa fa-bars icon"></i><span class="hide-menu-text">HIDE MENU</span></button>
+    
+    <div class="navbar-inner">
+      <!-- Main navbar header -->
+      <div class="navbar-header">
+
+        <!-- Logo -->
+        <a href="" class="navbar-brand">
+          <div>  <img alt="筑友" src="http://127.0.0.1:5001/op/assets/img/logo.png"></div>
+          筑友
+        </a>
+
+        <!-- Main navbar toggle -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse"><i class="navbar-icon fa fa-bars"></i></button>
+
+      </div> <!-- / .navbar-header -->
+
+      <div id="main-navbar-collapse" class="collapse navbar-collapse main-navbar-collapse">
+        <div>
+          <ul class="nav navbar-nav">
+
+                      </ul> <!-- / .navbar-nav -->
+
+          <div class="right clearfix">
+            <ul class="nav navbar-nav pull-right right-navbar-nav">
+              <li class="nav-icon-btn nav-icon-btn-danger dropdown">
+                <a href="#notifications" class="dropdown-toggle" data-toggle="dropdown">
+                  <span class="label">5</span>
+                  <i class="nav-icon fa fa-bullhorn"></i>
+                  <span class="small-screen-text">Notifications</span>
+                </a>
+
+                <!-- NOTIFICATIONS -->
+                <!-- Javascript -->
+                <script>
+                  init.push(function () {
+                    $('#main-navbar-notifications').slimScroll({ height: 250 });
+                  });
+                </script>
+                <!-- / Javascript -->
+
+                <div class="dropdown-menu widget-notifications no-padding" style="width: 300px">
+                  <div class="notifications-list" id="main-navbar-notifications">
+
+                    <div class="notification">
+                      <div class="notification-title text-danger">SYSTEM</div>
+                      <div class="notification-description"><strong>Error 500</strong>: 服务器故障 <strong>404</strong>.</div>
+                      <div class="notification-ago">12小时前</div>
+                      <div class="notification-icon fa fa-hdd-o bg-danger"></div>
+                    </div> <!-- / .notification -->
+
+                  </div> <!-- / .notifications-list -->
+                  <a href="#" class="notifications-link">更多</a>
+                </div> <!-- / .dropdown-menu -->
+              </li>
+              <li class="nav-icon-btn nav-icon-btn-success dropdown">
+                <a href="#messages" class="dropdown-toggle" data-toggle="dropdown">
+                  <span class="label">10</span>
+                  <i class="nav-icon fa fa-envelope"></i>
+                  <span class="small-screen-text">Income messages</span>
+                </a>
+
+                <!-- MESSAGES -->
+                <!-- Javascript -->
+                <script>
+                  init.push(function () {
+                    $('#main-navbar-messages').slimScroll({ height: 250 });
+                  });
+                </script>
+                <!-- / Javascript -->
+
+                <div class="dropdown-menu widget-messages-alt no-padding" style="width: 300px;">
+                  <div class="messages-list" id="main-navbar-messages">
+
+                    <div class="message">
+                      <img src="http://127.0.0.1:5001/op/assets/img/user2.jpg" alt="" class="message-avatar">
+                      <a href="#" class="message-subject">有新消息</a>
+                      <div class="message-description">
+                        FROM <a href="#">MT</a>
+                        &nbsp;&nbsp;·&nbsp;&nbsp;
+                        5分钟前
+                      </div>
+                    </div> <!-- / .message -->
+
+                  </div> <!-- / .messages-list -->
+                  <a href="#" class="messages-link">更多</a>
+                </div> <!-- / .dropdown-menu -->
+              </li>
+              <!-- / $END_NAVBAR_ICON_BUTTONS -->
+
+	                          <li class="dropdown">
+                <a href="#" class="dropdown-toggle user-menu" data-toggle="dropdown">
+                  <img src="http://127.0.0.1:5001/op/assets/img/user2.jpg" alt="">
+                  <span>
+                    lixd-a                  </span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#"><span class="label label-warning pull-right">New</span>个人信息</a></li>
+                  <li><a href="#"><i class="dropdown-icon fa fa-cog"></i>&nbsp;&nbsp;设置</a></li>
+                  <li class="divider"></li>
+                  <li><a href="http://127.0.0.1:5001/op/index.php/main/logout"><i class="dropdown-icon fa fa-power-off"></i>&nbsp;&nbsp;注销</a></li>
+                </ul>
+              </li>
+	                        </ul> <!-- / .navbar-nav -->
+          </div> <!-- / .right -->
+        </div>
+      </div> <!-- / #main-navbar-collapse -->
+    </div> <!-- / .navbar-inner -->
+  </div> <!-- / #main-navbar -->
+<!-- / $END_MAIN_NAVIGATION -->
+
+
+
+
+	<!-- $MAIN_MENU -->
+
+<div id="main-menu" role="navigation">
+  <div id="main-menu-inner">
+    <ul class="navigation">
+                        <li  >
+            <a href="http://127.0.0.1:5001/op/index.php/main"><i class="menu-icon fa fa-tachometer"></i> <span class="mm-text">Dashboard</span></a>
+          </li>
+                                <li class="mm-dropdown mm-dropdown-root ">
+            <a href="#"><i class="menu-icon fa fa-flickr"></i> <span class="mm-text">内容运营</span></a>
+            <ul>
+                            <li  >
+                <a tabindex="-1" href="http://127.0.0.1:5001/op/index.php/gsk_news/spider">
+                  <i class="menu-icon fa fa-hand-grab-o"></i>  <span class="mm-text">新闻抓取</span>
+                </a>
+              </li>
+                            <li  >
+                <a tabindex="-1" href="http://127.0.0.1:5001/op/index.php/gsk_news/news">
+                  <i class="menu-icon fa fa-globe"></i>  <span class="mm-text">行业资讯</span>
+                </a>
+              </li>
+                            <li  >
+                <a tabindex="-1" href="http://127.0.0.1:5001/op/index.php/gsk_news/hot">
+                  <i class="menu-icon fa fa-slack"></i>  <span class="mm-text">热门话题</span>
+                </a>
+              </li>
+                            <li  >
+                <a tabindex="-1" href="http://127.0.0.1:5001/op/index.php/gsk_news/help">
+                  <i class="menu-icon fa fa-question-circle"></i>  <span class="mm-text">帮助文档</span>
+                </a>
+              </li>
+                            <li  >
+                <a tabindex="-1" href="http://127.0.0.1:5001/op/index.php/gsk_news/feedback">
+                  <i class="menu-icon fa fa-users"></i>  <span class="mm-text">用户反馈</span>
+                </a>
+              </li>
+                            <li  >
+                <a tabindex="-1" href="http://127.0.0.1:5001/op/index.php/gsk_news/liumi_flowlog">
+                  <i class="menu-icon fa fa-retweet"></i>  <span class="mm-text">流量兑换</span>
+                </a>
+              </li>
+                            <li  >
+                <a tabindex="-1" href="http://127.0.0.1:5001/op/index.php/gsk_news/user_integral">
+                  <i class="menu-icon fa fa-user-md"></i>  <span class="mm-text">用户积分</span>
+                </a>
+              </li>
+                            <li  >
+                <a tabindex="-1" href="http://127.0.0.1:5001/op/index.php/gsk_news/user_integral_ranking">
+                  <i class="menu-icon fa fa-sort-alpha-asc"></i>  <span class="mm-text">积分排行榜</span>
+                </a>
+              </li>
+                            <li  >
+                <a tabindex="-1" href="http://127.0.0.1:5001/op/index.php/gsk_news/call_record">
+                  <i class="menu-icon fa fa-money"></i>  <span class="mm-text">通话记录</span>
+                </a>
+              </li>
+                            <li  >
+                <a tabindex="-1" href="http://127.0.0.1:5001/op/index.php/gsk_news/call_convert_record">
+                  <i class="menu-icon fa fa-money"></i>  <span class="mm-text">通话兑换记录</span>
+                </a>
+              </li>
+                            <li  >
+                <a tabindex="-1" href="http://127.0.0.1:5001/op/index.php/gsk_news/call_balance_account">
+                  <i class="menu-icon fa fa-money"></i>  <span class="mm-text">对账系统</span>
+                </a>
+              </li>
+                            <li  >
+                <a tabindex="-1" href="http://127.0.0.1:5001/op/index.php/gsk_news/activity_position">
+                  <i class="menu-icon fa fa-leaf"></i>  <span class="mm-text">运营活动位</span>
+                </a>
+              </li>
+                          </ul>
+          </li>
+                                <li class="mm-dropdown mm-dropdown-root ">
+            <a href="#"><i class="menu-icon fa fa-flickr"></i> <span class="mm-text">消息管理</span></a>
+            <ul>
+                            <li  >
+                <a tabindex="-1" href="http://127.0.0.1:5001/op/index.php/gsk_msg/msg_list">
+                  <i class="menu-icon fa fa-file-text-o"></i>  <span class="mm-text">消息列表</span>
+                </a>
+              </li>
+                            <li  >
+                <a tabindex="-1" href="http://127.0.0.1:5001/op/index.php/gsk_msg/msg_add">
+                  <i class="menu-icon fa fa-retweet"></i>  <span class="mm-text">添加消息</span>
+                </a>
+              </li>
+                          </ul>
+          </li>
+                                <li class="mm-dropdown mm-dropdown-root ">
+            <a href="#"><i class="menu-icon fa fa-cloud-upload"></i> <span class="mm-text">版本发布</span></a>
+            <ul>
+                            <li  >
+                <a tabindex="-1" href="http://127.0.0.1:5001/op/index.php/gsk_pub/pub_ios">
+                  <i class="menu-icon fa fa-apple"></i>  <span class="mm-text">iOS</span>
+                </a>
+              </li>
+                            <li  >
+                <a tabindex="-1" href="http://127.0.0.1:5001/op/index.php/gsk_pub/pub_android">
+                  <i class="menu-icon fa fa-android"></i>  <span class="mm-text">android</span>
+                </a>
+              </li>
+                            <li  >
+                <a tabindex="-1" href="http://127.0.0.1:5001/op/index.php/gsk_pub/pub_pc">
+                  <i class="menu-icon fa fa-windows"></i>  <span class="mm-text">PC</span>
+                </a>
+              </li>
+                            <li  >
+                <a tabindex="-1" href="http://127.0.0.1:5001/op/index.php/gsk_pub/down_pkg">
+                  <i class="menu-icon fa fa-qrcode"></i>  <span class="mm-text">安装包</span>
+                </a>
+              </li>
+                          </ul>
+          </li>
+                                <li class="mm-dropdown mm-dropdown-root ">
+            <a href="#"><i class="menu-icon fa fa-adn"></i> <span class="mm-text">运维系统</span></a>
+            <ul>
+                            <li  >
+                <a tabindex="-1" href="http://127.0.0.1:5001/op/index.php/gsk_op/log">
+                  <i class="menu-icon fa fa-file-text-o"></i>  <span class="mm-text">日志系统</span>
+                </a>
+              </li>
+                            <li  >
+                <a tabindex="-1" href="http://127.0.0.1:5001/op/index.php/gsk_op/sqm">
+                  <i class="menu-icon fa fa-area-chart"></i>  <span class="mm-text">服务质量</span>
+                </a>
+              </li>
+                            <li  >
+                <a tabindex="-1" href="http://127.0.0.1:5001/op/index.php/gsk_op/moni">
+                  <i class="menu-icon fa fa-line-chart"></i>  <span class="mm-text">监控系统</span>
+                </a>
+              </li>
+                            <li  >
+                <a tabindex="-1" href="http://127.0.0.1:5001/op/index.php/gsk_op/user_info">
+                  <i class="menu-icon fa fa-user"></i>  <span class="mm-text">用户信息</span>
+                </a>
+              </li>
+                            <li  >
+                <a tabindex="-1" href="http://127.0.0.1:5001/op/index.php/gsk_op/project_info">
+                  <i class="menu-icon fa fa-magnet"></i>  <span class="mm-text">项目信息</span>
+                </a>
+              </li>
+                          </ul>
+          </li>
+                                <li class="mm-dropdown mm-dropdown-root  open active">
+            <a href="#"><i class="menu-icon fa fa-bar-chart-o"></i> <span class="mm-text">统计系统</span></a>
+            <ul>
+                            <li  >
+                <a tabindex="-1" href="http://127.0.0.1:5001/op/index.php/gsk_stat/stat">
+                  <i class="menu-icon fa fa-line-chart"></i>  <span class="mm-text">渠道数据</span>
+                </a>
+              </li>
+                            <li  class="active" >
+                <a tabindex="-1" href="http://127.0.0.1:5001/op/index.php/gsk_stat/stat_PV">
+                  <i class="menu-icon fa fa-rebel"></i>  <span class="mm-text">PV数据</span>
+                </a>
+              </li>
+                          </ul>
+          </li>
+                                <li class="mm-dropdown mm-dropdown-root ">
+            <a href="#"><i class="menu-icon fa fa-trello"></i> <span class="mm-text">推广系统</span></a>
+            <ul>
+                            <li  >
+                <a tabindex="-1" href="http://127.0.0.1:5001/op/index.php/gsk_promotion/audit">
+                  <i class="menu-icon fa fa-file-o"></i>  <span class="mm-text">推广审核</span>
+                </a>
+              </li>
+                            <li  >
+                <a tabindex="-1" href="http://127.0.0.1:5001/op/index.php/gsk_promotion/data">
+                  <i class="menu-icon fa fa-binoculars"></i>  <span class="mm-text">推广数据</span>
+                </a>
+              </li>
+                          </ul>
+          </li>
+                                <li class="mm-dropdown mm-dropdown-root ">
+            <a href="#"><i class="menu-icon fa fa-trello"></i> <span class="mm-text">文件系统</span></a>
+            <ul>
+                            <li  >
+                <a tabindex="-1" href="http://127.0.0.1:5001/op/index.php/gsk_file/index">
+                  <i class="menu-icon fa fa-file-o"></i>  <span class="mm-text">大礼包文件管理</span>
+                </a>
+              </li>
+                          </ul>
+          </li>
+                  </ul> <!-- / .navigation -->
+  </div> <!-- / #main-menu-inner -->
+</div> <!-- / #main-menu -->
+<!-- / $MAIN_MENU -->
+
+
+	<div id="content-wrapper">
+		<script>
+			init.push(function () {
+				$('#toggle-mme').click(function () {
+					$('body').toggleClass('mme');
+				});
+				$('#toggle-mmc').click(function () {
+					$('body').toggleClass('mmc');
+				});
+			});
+		</script>
+		<div class="page-header">
+	<h1><span class="text-light-gray">PV数据统计/</h1>
+</div>
+
+
+<script>
+	$(function () { $("[data-toggle='tooltip']").tooltip(); });
+</script>
+
+<div class="panel">
+	<div class="panel-body">
+		<table class="table table-condensed">
+			<thead>
+			<tr>
+				<th style="text-align: center">发布时间</th>
+				<th style="text-align: center">标题</th>
+				<th style="text-align: center">总浏览量</th>
+									<td>2015/12/15</td>
+									<td>2015/12/14</td>
+									<td>2015/12/13</td>
+									<td>2015/12/12</td>
+									<td>2015/12/11</td>
+									<td>2015/12/10</td>
+									<td>2015/12/09</td>
+							</tr>
+			</thead>
+										<tr>
+					<td style="width: 150px">2015-09-10 15:28:00</td>
+					<td style="width: 190px">
+						北京新规：重点工程安...					</td>
+											<td>387</td>
+											<td>10</td>
+											<td>3</td>
+											<td>0</td>
+											<td>0</td>
+											<td>15</td>
+											<td>27</td>
+											<td>12</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-09-10 13:21:43</td>
+					<td style="width: 190px">
+						筑友，为建筑而生！					</td>
+											<td>57</td>
+											<td>2</td>
+											<td>0</td>
+											<td>1</td>
+											<td>0</td>
+											<td>2</td>
+											<td>3</td>
+											<td>1</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-28 07:42:01</td>
+					<td style="width: 190px">
+						一位老预算员的经验总...					</td>
+											<td>315</td>
+											<td>19</td>
+											<td>3</td>
+											<td>0</td>
+											<td>0</td>
+											<td>10</td>
+											<td>23</td>
+											<td>7</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-28 06:42:01</td>
+					<td style="width: 190px">
+						不能“挂靠”了？社保...					</td>
+											<td>182</td>
+											<td>9</td>
+											<td>1</td>
+											<td>0</td>
+											<td>0</td>
+											<td>6</td>
+											<td>8</td>
+											<td>7</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-28 05:42:01</td>
+					<td style="width: 190px">
+						五分钟让你避开一级建...					</td>
+											<td>96</td>
+											<td>0</td>
+											<td>1</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>5</td>
+											<td>0</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-28 04:42:01</td>
+					<td style="width: 190px">
+						2015一建考前冲刺...					</td>
+											<td>58</td>
+											<td>3</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>1</td>
+											<td>0</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-28 03:42:01</td>
+					<td style="width: 190px">
+						2015年造价师考试...					</td>
+											<td>56</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>2</td>
+											<td>0</td>
+											<td>1</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-28 02:42:01</td>
+					<td style="width: 190px">
+						一级建造师《机电工程...					</td>
+											<td>49</td>
+											<td>2</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>2</td>
+											<td>0</td>
+											<td>1</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-28 01:42:01</td>
+					<td style="width: 190px">
+						安全现场管理24个必...					</td>
+											<td>48</td>
+											<td>4</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>3</td>
+											<td>2</td>
+											<td>0</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-28 00:42:01</td>
+					<td style="width: 190px">
+						墙体裂缝产生的原因解...					</td>
+											<td>24</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>1</td>
+											<td>0</td>
+											<td>0</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-27 21:42:01</td>
+					<td style="width: 190px">
+						施工技术管理16字诀...					</td>
+											<td>23</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>4</td>
+											<td>1</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-27 20:42:01</td>
+					<td style="width: 190px">
+						设计院总工的经验之谈...					</td>
+											<td>24</td>
+											<td>5</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>1</td>
+											<td>1</td>
+											<td>1</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-27 17:42:01</td>
+					<td style="width: 190px">
+						设计师和施工队该如何...					</td>
+											<td>18</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>1</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-27 16:42:01</td>
+					<td style="width: 190px">
+						有哪些值得购买的建筑...					</td>
+											<td>13</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>1</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-27 14:42:01</td>
+					<td style="width: 190px">
+						土建基本知识大全（1...					</td>
+											<td>39</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>4</td>
+											<td>0</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-27 13:42:01</td>
+					<td style="width: 190px">
+						土建基础知识大全（2...					</td>
+											<td>14</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>1</td>
+											<td>0</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-27 12:42:01</td>
+					<td style="width: 190px">
+						土建基础施工大全（3...					</td>
+											<td>11</td>
+											<td>0</td>
+											<td>1</td>
+											<td>0</td>
+											<td>0</td>
+											<td>1</td>
+											<td>1</td>
+											<td>1</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-27 11:42:01</td>
+					<td style="width: 190px">
+						土建基础施工大全（4...					</td>
+											<td>12</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>3</td>
+											<td>2</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-27 09:42:01</td>
+					<td style="width: 190px">
+						十年结构设计经验的总...					</td>
+											<td>10</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>1</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-27 08:42:01</td>
+					<td style="width: 190px">
+						关于钢筋现场施工的概...					</td>
+											<td>4</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>1</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-27 05:42:01</td>
+					<td style="width: 190px">
+						因为这五个“不够”，...					</td>
+											<td>8</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>1</td>
+											<td>0</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-27 02:42:01</td>
+					<td style="width: 190px">
+						14个绝妙钢筋技巧					</td>
+											<td>8</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>1</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-27 01:42:01</td>
+					<td style="width: 190px">
+						推广建筑工业化是发展...					</td>
+											<td>16</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>4</td>
+											<td>1</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-26 19:42:01</td>
+					<td style="width: 190px">
+						造价员怎样才能提高工...					</td>
+											<td>5</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>1</td>
+											<td>0</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-26 17:42:01</td>
+					<td style="width: 190px">
+						“双降”最利好一二线...					</td>
+											<td>12</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>1</td>
+											<td>1</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-26 14:42:01</td>
+					<td style="width: 190px">
+						建筑墙体保温装饰系统...					</td>
+											<td>1</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>1</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-26 13:42:01</td>
+					<td style="width: 190px">
+						房地产拐点又现？ 绿...					</td>
+											<td>6</td>
+											<td>5</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-26 08:42:01</td>
+					<td style="width: 190px">
+						吊篮脚手架的通病与防...					</td>
+											<td>4</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>1</td>
+											<td>0</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-26 07:42:01</td>
+					<td style="width: 190px">
+						确保砼灌注桩中钢筋笼...					</td>
+											<td>2</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>1</td>
+											<td>0</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-25 21:42:01</td>
+					<td style="width: 190px">
+						楼地面工程——地板砖...					</td>
+											<td>4</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>1</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-25 20:42:01</td>
+					<td style="width: 190px">
+						常见的基础形式介绍					</td>
+											<td>3</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>1</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-25 11:42:01</td>
+					<td style="width: 190px">
+						建筑师10大悲情时刻...					</td>
+											<td>4</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>1</td>
+											<td>0</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-25 10:42:01</td>
+					<td style="width: 190px">
+						揭秘中国六大结构设计...					</td>
+											<td>27</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>1</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-25 09:42:01</td>
+					<td style="width: 190px">
+						谈一谈一级建造师的重...					</td>
+											<td>27</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>3</td>
+											<td>0</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-25 07:42:01</td>
+					<td style="width: 190px">
+						建筑工程施工经验小结...					</td>
+											<td>58</td>
+											<td>1</td>
+											<td>1</td>
+											<td>0</td>
+											<td>0</td>
+											<td>8</td>
+											<td>2</td>
+											<td>2</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-25 03:42:01</td>
+					<td style="width: 190px">
+						北京住建委：上半年保...					</td>
+											<td>14</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>12</td>
+											<td>0</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-25 01:42:01</td>
+					<td style="width: 190px">
+						建筑工业化会不会取代...					</td>
+											<td>4</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>3</td>
+											<td>0</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-22 12:42:01</td>
+					<td style="width: 190px">
+						建筑施工如何快速入门...					</td>
+											<td>44</td>
+											<td>9</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>1</td>
+											<td>3</td>
+											<td>0</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-22 08:42:01</td>
+					<td style="width: 190px">
+						房企中报信号：为保利...					</td>
+											<td>3</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>1</td>
+											<td>0</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-22 04:42:01</td>
+					<td style="width: 190px">
+						怎样做好建筑方案？					</td>
+											<td>8</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>6</td>
+											<td>1</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-21 11:42:01</td>
+					<td style="width: 190px">
+						挑檐工程量的计算方法...					</td>
+											<td>3</td>
+											<td>1</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-21 04:42:01</td>
+					<td style="width: 190px">
+						一建99%的人都不知...					</td>
+											<td>34</td>
+											<td>1</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>1</td>
+											<td>0</td>
+											<td>0</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-21 03:42:01</td>
+					<td style="width: 190px">
+						一级建造师项目管理—...					</td>
+											<td>26</td>
+											<td>3</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>1</td>
+											<td>1</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-20 22:42:01</td>
+					<td style="width: 190px">
+						融创中国账面现金16...					</td>
+											<td>1</td>
+											<td>1</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-20 07:42:01</td>
+					<td style="width: 190px">
+						郑州“凯旋门”走红网...					</td>
+											<td>2</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>1</td>
+											<td>0</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-19 18:42:01</td>
+					<td style="width: 190px">
+						上海老建筑之谜					</td>
+											<td>14</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>13</td>
+											<td>1</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-19 16:42:01</td>
+					<td style="width: 190px">
+						给水设备和管道安装要...					</td>
+											<td>2</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>1</td>
+											<td>0</td>
+									</tr>
+											<tr>
+					<td style="width: 150px">2015-08-19 02:42:01</td>
+					<td style="width: 190px">
+						中国建筑科学研究院：...					</td>
+											<td>1</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>0</td>
+											<td>1</td>
+											<td>0</td>
+									</tr>
+										<tbody>
+			</tbody>
+		</table>
+	</div>
+</div>	</div> <!-- / #content-wrapper -->
+
+	<div id="main-menu-bg"></div>
+
+</div> <!-- / #main-wrapper -->
+
+<script type="text/javascript">
+	init.push(function () {
+		// Javascript code here
+	})
+	window.PixelAdmin.start(init);
+</script>
+
+</body>
+</html>
