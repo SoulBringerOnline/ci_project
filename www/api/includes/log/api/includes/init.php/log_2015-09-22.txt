@@ -1,0 +1,96 @@
+2015-09-22 11:26:15 - INFO --> ; array (
+  'act' => '',
+  'user_agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36',
+  'client_ip' => '127.0.0.1',
+  'time' => 1442892375,
+)
+2015-09-22 13:58:18 - INFO --> ; array (
+  'act' => '',
+  'user_agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36',
+  'client_ip' => '127.0.0.1',
+  'time' => 1442901498,
+)
+2015-09-22 13:58:59 - INFO --> ; array (
+  'act' => '',
+  'user_agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36',
+  'client_ip' => '127.0.0.1',
+  'time' => 1442901539,
+)
+2015-09-22 13:59:48 - INFO --> ; array (
+  'act' => '',
+  'user_agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36',
+  'client_ip' => '127.0.0.1',
+  'time' => 1442901588,
+)
+2015-09-22 14:00:28 - INFO --> ; array (
+  'act' => '',
+  'user_agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36',
+  'client_ip' => '127.0.0.1',
+  'time' => 1442901628,
+)
+2015-09-22 14:00:44 - INFO --> ; array (
+  'act' => '',
+  'user_agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36',
+  'client_ip' => '127.0.0.1',
+  'time' => 1442901644,
+)
+2015-09-22 14:17:00 - INFO --> ; array (
+  'act' => '',
+  'user_agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36',
+  'client_ip' => '127.0.0.1',
+  'time' => 1442902620,
+)
+2015-09-22 14:21:26 - INFO --> ; array (
+  'act' => '',
+  'user_agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36',
+  'client_ip' => '127.0.0.1',
+  'time' => 1442902886,
+)
+2015-09-22 14:21:58 - INFO --> ; array (
+  'act' => '',
+  'user_agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36',
+  'client_ip' => '127.0.0.1',
+  'time' => 1442902918,
+)
+2015-09-22 14:25:27 - INFO --> ; array (
+  'act' => '',
+  'user_agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36',
+  'client_ip' => '127.0.0.1',
+  'time' => 1442903127,
+)
+2015-09-22 14:28:53 - INFO --> ; array (
+  'act' => '',
+  'user_agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36',
+  'client_ip' => '127.0.0.1',
+  'time' => 1442903333,
+)
+2015-09-22 14:29:04 - INFO --> ; array (
+  'act' => '',
+  'user_agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36',
+  'client_ip' => '127.0.0.1',
+  'time' => 1442903344,
+)
+2015-09-22 17:26:47 - INFO --> ; array (
+  'act' => '',
+  'user_agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36',
+  'client_ip' => '127.0.0.1',
+  'time' => 1442914007,
+)
+2015-09-22 17:27:07 - INFO --> ; array (
+  'act' => '',
+  'user_agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36',
+  'client_ip' => '127.0.0.1',
+  'time' => 1442914027,
+)
+2015-09-22 17:27:14 - INFO --> ; array (
+  'act' => '',
+  'user_agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36',
+  'client_ip' => '127.0.0.1',
+  'time' => 1442914034,
+)
+2015-09-22 17:27:14 - INFO --> ; array (
+  'act' => '',
+  'user_agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36',
+  'client_ip' => '127.0.0.1',
+  'time' => 1442914034,
+)

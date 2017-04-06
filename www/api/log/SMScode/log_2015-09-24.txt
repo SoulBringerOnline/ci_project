@@ -1,0 +1,16 @@
+2015-09-24 13:36:18 - INFO --> [success]; array (
+  'mobile' => '15201189594',
+  'text' => 4559,
+  'username' => 'gld_wx',
+  'password' => 'gld_wx20150713',
+)
+2015-09-24 13:36:18 - INFO --> [success]; array (
+  'mobile' => '15201189594',
+  'text' => 4559,
+  'sms-15201189594-0-040E417E4361440BBD7E9E5F9BD5B3A7-' => 
+  array (
+    'seq_id' => 'da0488d3d084dd065b77d15cc0e9afc4',
+    'code' => 4559,
+    'starttime' => 1443072978,
+  ),
+)
